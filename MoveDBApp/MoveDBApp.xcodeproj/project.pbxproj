@@ -334,16 +334,16 @@
 			children = (
 				B9E3D64D1A9F187C007D25A4 /* Discover List */,
 				B9E3D64C1A9F186E007D25A4 /* Movie Details Page */,
-				B9E3D64B1A9F185D007D25A4 /* Movies Collection View */,
+				B9E3D64B1A9F185D007D25A4 /* Movies Collection */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
 		};
-		B9E3D64B1A9F185D007D25A4 /* Movies Collection View */ = {
+		B9E3D64B1A9F185D007D25A4 /* Movies Collection */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = "Movies Collection View";
+			name = "Movies Collection";
 			sourceTree = "<group>";
 		};
 		B9E3D64C1A9F186E007D25A4 /* Movie Details Page */ = {

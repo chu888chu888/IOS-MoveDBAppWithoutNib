@@ -9,9 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "KMNetworkLoadingViewController.h"
 
-@interface KMDiscoverListViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, KMNetworkLoadingViewDelegate>
-
-@property (nonatomic)  UIView *networkLoadingContainerView;
-@property (nonatomic)  UITableView *tableView;
-
+@interface KMDiscoverListViewController : UITableViewController<UITableViewDelegate, KMNetworkLoadingViewDelegate>
+@property (nonatomic) UIView *networkLoadingContainerView;
 @end

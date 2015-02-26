@@ -16,7 +16,6 @@
 @interface KMDiscoverListViewController ()
 
 @property (nonatomic, strong) NSMutableArray* dataSource;
-@property (nonatomic, strong) UIRefreshControl* refreshControl;
 @property (nonatomic, strong) KMNetworkLoadingViewController* networkLoadingViewController;
 
 @end
@@ -26,50 +25,34 @@
 #pragma mark -
 #pragma mark Init Methods
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
-#pragma mark -
-#pragma mark View Lifecycle
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     [self setupTableView];
     [self requestMovies];
-    // Do any additional setup after loading the view.
+    
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 #pragma mark -
 #pragma mark Setup Methods
 
 - (void)setupTableView
 {
-    if (!_refreshControl)
-    {
-        _refreshControl = [[UIRefreshControl alloc] initWithFrame:CGRectMake(0, -44, 320, 44)];
-        [self.refreshControl addTarget:self action:@selector(refreshFeed) forControlEvents:UIControlEventValueChanged];
-        [self.tableView addSubview:_refreshControl];
-    }
+    
+    self.refreshControl=[[UIRefreshControl alloc]initWithFrame:CGRectMake(0, -44, 320, 44)];
+    [self.refreshControl addTarget:self action:@selector(refreshFeed) forControlEvents:UIControlEventValueChanged];
+    [self.tableView.tableHeaderView addSubview:self.refreshControl];
+    self.tableView.rowHeight=70.0f;
 }
-
 #pragma mark -
 #pragma mark Container Segue Methods
 
@@ -87,6 +70,7 @@
 
 - (void)refreshFeed
 {
+    self.refreshControl.attributedTitle = [[NSAttributedString alloc]initWithString:@"一只驴正在跑..."];
     [self requestMovies];
 }
 
@@ -129,29 +113,37 @@
     [self requestMovies];
 }
 
-#pragma mark -
-#pragma mark UITableViewDataSource
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section;
-{
-    return [self.dataSource count];
+#pragma mark - Table view data source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+#warning Potentially incomplete method implementation.
+    // Return the number of sections.
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+#warning Incomplete method implementation.
+    // Return the number of rows in the section.
+    //return 0;
     
+    //return 10;
+    NSLog(@"数据为:%lu",(unsigned long)[self.dataSource count]);
+    return [self.dataSource count];
+
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    KMDiscoverListCell* cell = (KMDiscoverListCell*)[tableView dequeueReusableCellWithIdentifier:@"DiscoverListCell" forIndexPath:indexPath];
-    [cell.timelineImageView setImageURL:[NSURL URLWithString:[[self.dataSource objectAtIndex:indexPath.row] movieOriginalBackdropImageUrl]]];
-    [cell.titleLabel setText:[[self.dataSource objectAtIndex:indexPath.row] movieTitle]];
+    static NSString *identifier=@"basic-cell";
+    UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:identifier];
+    if (nil==cell) {
+        cell=[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+    }
+
+    cell.textLabel.text=[[self.dataSource objectAtIndex:indexPath.row] movieTitle];
     return cell;
-}
-
-#pragma mark -
-#pragma mark UITableViewDelegate
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
-{
-    NSLog(@"Detail view");
+    
 }
 
 #pragma mark -
