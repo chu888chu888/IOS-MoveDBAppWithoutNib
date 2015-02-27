@@ -12,11 +12,10 @@
 #import "KMDiscoverSource.h"
 #import "KMMovie.h"
 
-
+NSString * const KMDiscoverListMenuCellReuseIdentifier = @"Drawer Cell";
 @interface KMDiscoverListViewController ()
 
 @property (nonatomic, strong) NSMutableArray* dataSource;
-@property (nonatomic, strong) KMNetworkLoadingViewController* networkLoadingViewController;
 
 @end
 
@@ -37,7 +36,11 @@
     [self requestMovies];
     
 }
-
+-(void) loadView {
+    
+    [super loadView];
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -47,46 +50,58 @@
 
 - (void)setupTableView
 {
+    //通过代码自定义代码单元格与单元表头
+    [self.tableView registerClass:[KMDiscoverListCell class] forCellReuseIdentifier:KMDiscoverListMenuCellReuseIdentifier];
+
+    //去掉边框线
+    [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
     
+    //设定导航条
+
+    self.navigationController.navigationBar.barTintColor = [UIColor lightGrayColor];
+    self.navigationItem.title=@"Discover";
+    
+    //设定刷新条
     self.refreshControl=[[UIRefreshControl alloc]initWithFrame:CGRectMake(0, -44, 320, 44)];
     [self.refreshControl addTarget:self action:@selector(refreshFeed) forControlEvents:UIControlEventValueChanged];
     [self.tableView.tableHeaderView addSubview:self.refreshControl];
-    self.tableView.rowHeight=70.0f;
-}
-#pragma mark -
-#pragma mark Container Segue Methods
 
-- (void) prepareForSegue:(UIStoryboardSegue*)segue sender:(id)sender
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if ([segue.identifier isEqualToString:[NSString stringWithFormat:@"%s", class_getName([KMNetworkLoadingViewController class])]])
-    {
-        self.networkLoadingViewController = segue.destinationViewController;
-        self.networkLoadingViewController.delegate = self;
-    }
+    return 260;
 }
-
 #pragma mark -
 #pragma mark Network Requests methods
-
-- (void)refreshFeed
-{
-    self.refreshControl.attributedTitle = [[NSAttributedString alloc]initWithString:@"一只驴正在跑..."];
-    [self requestMovies];
-}
-
 - (void)requestMovies
 {
     KMDiscoverListCompletionBlock completionBlock = ^(NSArray* data, NSString* errorString)
     {
         [self.refreshControl endRefreshing];
         if (data != nil)
+        {
             [self processData:data];
+        }
         else
-            [self.networkLoadingViewController showErrorView];
+        {
+            //[self.networkLoadingViewController showErrorView];
+            //加入显示错误的提示
+        }
+
     };
     KMDiscoverSource* source = [KMDiscoverSource discoverSource];
     [source getDiscoverList:@"1" completion:completionBlock];
 }
+
+
+
+- (void)refreshFeed
+{
+    self.refreshControl.attributedTitle = [[NSAttributedString alloc]initWithString:@"A donkey in the running"];
+    [self requestMovies];
+}
+
+
 
 #pragma mark -
 #pragma mark Fetched Data Processing
@@ -94,40 +109,29 @@
 - (void)processData:(NSArray*)data
 {
     if ([data count] == 0)
-        [self.networkLoadingViewController showNoContentView];
+    {
+        //[self.networkLoadingViewController showNoContentView];
+        //显示错误信息
+    }
     else
     {
-        [self hideLoadingView];
         if (!self.dataSource)
+        {
             self.dataSource = [[NSMutableArray alloc] init];
+        }
         self.dataSource = [NSMutableArray arrayWithArray:data];
         [self.tableView reloadData];
     }
-}
-
-#pragma mark -
-#pragma mark KMNetworkLoadingViewDelegate
-
--(void)retryRequest;
-{
-    [self requestMovies];
 }
 
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    //return 0;
-    
-    //return 10;
     NSLog(@"数据为:%lu",(unsigned long)[self.dataSource count]);
     return [self.dataSource count];
 
@@ -135,6 +139,8 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    /*
+   
     static NSString *identifier=@"basic-cell";
     UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:identifier];
     if (nil==cell) {
@@ -143,21 +149,17 @@
 
     cell.textLabel.text=[[self.dataSource objectAtIndex:indexPath.row] movieTitle];
     return cell;
+    */
+    
+    
+    KMDiscoverListCell* cell = (KMDiscoverListCell*)[tableView dequeueReusableCellWithIdentifier:KMDiscoverListMenuCellReuseIdentifier forIndexPath:indexPath];
+    [cell.timelineImageView setImageURL:[NSURL URLWithString:[[self.dataSource objectAtIndex:indexPath.row] movieOriginalBackdropImageUrl]]];
+    NSLog(@"图片地址:%@",[[self.dataSource objectAtIndex:indexPath.row] movieOriginalBackdropImageUrl]);
+    
+    [cell.titleLabel setText:[[self.dataSource objectAtIndex:indexPath.row] movieTitle]];
+    return cell;
     
 }
 
-#pragma mark -
-#pragma mark KMNetworkLoadingViewController Methods
-
-- (void)hideLoadingView
-{
-    [UIView transitionWithView:self.view duration:0.3f options:UIViewAnimationOptionTransitionCrossDissolve animations:^(void)
-     {
-         [self.networkLoadingContainerView removeFromSuperview];
-     } completion:^(BOOL finished) {
-         [self.networkLoadingViewController removeFromParentViewController];
-         self.networkLoadingContainerView = nil;
-     }];
-}
 
 @end

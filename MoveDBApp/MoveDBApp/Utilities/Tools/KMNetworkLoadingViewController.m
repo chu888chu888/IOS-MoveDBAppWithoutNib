@@ -25,7 +25,27 @@
 
 #pragma mark -
 #pragma mark View LifeCycle
+- (void)loadView
+{
+    /*
+    @property (weak, nonatomic)  UIView *loadingView;
+    @property (weak, nonatomic)  UIView *errorView;
+    @property (weak, nonatomic)  UIButton *refreshButton;
+    @property (weak, nonatomic)  KMActivityIndicator *activityIndicatorView;
+    @property (weak, nonatomic)  UIView *noContentView;
+     */
 
+    _loadingView=[[UIView alloc]initWithFrame: [ UIScreen mainScreen ].applicationFrame];
+    _activityIndicatorView=[[KMActivityIndicator alloc]initWithFrame:CGRectMake(300, 100, 40, 40)];
+    UILabel *loadLabel=[[UILabel alloc]initWithFrame:CGRectMake(0, 0, 40, 40)];
+    [_loadingView addSubview:_activityIndicatorView];
+    [_loadingView addSubview:loadLabel];
+    
+    
+    _errorView=[[UIView alloc]initWithFrame: [ UIScreen mainScreen ].applicationFrame];
+    
+    _noContentView=[[UIView alloc]initWithFrame: [ UIScreen mainScreen ].applicationFrame];
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
