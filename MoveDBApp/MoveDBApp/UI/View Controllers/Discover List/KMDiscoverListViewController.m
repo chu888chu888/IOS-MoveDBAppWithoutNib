@@ -11,7 +11,7 @@
 #import "KMDiscoverListCell.h"
 #import "KMDiscoverSource.h"
 #import "KMMovie.h"
-
+#import "UIView+MJAlertView.h"
 NSString * const KMDiscoverListMenuCellReuseIdentifier = @"Drawer Cell";
 @interface KMDiscoverListViewController ()
 
@@ -32,6 +32,13 @@ NSString * const KMDiscoverListMenuCellReuseIdentifier = @"Drawer Cell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    _KMDiscoverActivityIndicatorView=[[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+    _KMDiscoverActivityIndicatorView.center=self.view.center;
+    [_KMDiscoverActivityIndicatorView startAnimating];
+    [self.view addSubview:_KMDiscoverActivityIndicatorView];
+    
+    
     [self setupTableView];
     [self requestMovies];
     
@@ -55,7 +62,7 @@ NSString * const KMDiscoverListMenuCellReuseIdentifier = @"Drawer Cell";
 
     //去掉边框线
     [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
-    
+    [self.tableView setBackgroundColor:[UIColor blackColor]];
     //设定导航条
 
     self.navigationController.navigationBar.barTintColor = [UIColor lightGrayColor];
@@ -69,7 +76,7 @@ NSString * const KMDiscoverListMenuCellReuseIdentifier = @"Drawer Cell";
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 260;
+    return 240;
 }
 #pragma mark -
 #pragma mark Network Requests methods
@@ -77,7 +84,10 @@ NSString * const KMDiscoverListMenuCellReuseIdentifier = @"Drawer Cell";
 {
     KMDiscoverListCompletionBlock completionBlock = ^(NSArray* data, NSString* errorString)
     {
+        //停止下拉与等待效果
         [self.refreshControl endRefreshing];
+        [_KMDiscoverActivityIndicatorView stopAnimating];
+        
         if (data != nil)
         {
             [self processData:data];
@@ -86,6 +96,7 @@ NSString * const KMDiscoverListMenuCellReuseIdentifier = @"Drawer Cell";
         {
             //[self.networkLoadingViewController showErrorView];
             //加入显示错误的提示
+            [UIView addMJNotifierWithText:@"网络故障请重试" dismissAutomatically:YES];
         }
 
     };
@@ -97,7 +108,7 @@ NSString * const KMDiscoverListMenuCellReuseIdentifier = @"Drawer Cell";
 
 - (void)refreshFeed
 {
-    self.refreshControl.attributedTitle = [[NSAttributedString alloc]initWithString:@"A donkey in the running"];
+    self.refreshControl.attributedTitle = [[NSAttributedString alloc]initWithString:@"一头驴在拼命的跑...."];
     [self requestMovies];
 }
 
@@ -110,8 +121,7 @@ NSString * const KMDiscoverListMenuCellReuseIdentifier = @"Drawer Cell";
 {
     if ([data count] == 0)
     {
-        //[self.networkLoadingViewController showNoContentView];
-        //显示错误信息
+        [UIView addMJNotifierWithText:@"没有读取到内容,请重试" dismissAutomatically:YES];
     }
     else
     {
@@ -132,29 +142,16 @@ NSString * const KMDiscoverListMenuCellReuseIdentifier = @"Drawer Cell";
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    NSLog(@"数据为:%lu",(unsigned long)[self.dataSource count]);
+    //NSLog(@"数据为:%lu",(unsigned long)[self.dataSource count]);
     return [self.dataSource count];
 
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    /*
-   
-    static NSString *identifier=@"basic-cell";
-    UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:identifier];
-    if (nil==cell) {
-        cell=[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
-    }
-
-    cell.textLabel.text=[[self.dataSource objectAtIndex:indexPath.row] movieTitle];
-    return cell;
-    */
-    
-    
     KMDiscoverListCell* cell = (KMDiscoverListCell*)[tableView dequeueReusableCellWithIdentifier:KMDiscoverListMenuCellReuseIdentifier forIndexPath:indexPath];
     [cell.timelineImageView setImageURL:[NSURL URLWithString:[[self.dataSource objectAtIndex:indexPath.row] movieOriginalBackdropImageUrl]]];
-    NSLog(@"图片地址:%@",[[self.dataSource objectAtIndex:indexPath.row] movieOriginalBackdropImageUrl]);
+    //NSLog(@"图片地址:%@",[[self.dataSource objectAtIndex:indexPath.row] movieOriginalBackdropImageUrl]);
     
     [cell.titleLabel setText:[[self.dataSource objectAtIndex:indexPath.row] movieTitle]];
     return cell;

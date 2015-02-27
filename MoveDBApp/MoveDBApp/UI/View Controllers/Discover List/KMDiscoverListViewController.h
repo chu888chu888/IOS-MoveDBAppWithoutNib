@@ -11,4 +11,5 @@
 #import "KMDiscoverListCell.h"
 @interface KMDiscoverListViewController : UITableViewController
 @property (nonatomic,strong) UITableViewCell *tableViewCell;
+@property (strong, nonatomic)  UIActivityIndicatorView *KMDiscoverActivityIndicatorView;
 @end

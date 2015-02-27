@@ -27,9 +27,9 @@
 //设置图片的样式
 -(void) SetImageView {
     //添加图片
-    UIView *cellView = [[UIView alloc]initWithFrame:CGRectMake(0.0f, 0.0f, [[UIScreen mainScreen] bounds].size.width, 260)];
+    UIView *cellView = [[UIView alloc]initWithFrame:CGRectMake(0.0f, 0.0f, [[UIScreen mainScreen] bounds].size.width, 240)];
     //添加icon
-    timelineImageView = [[EGOImageView alloc]initWithFrame:CGRectMake(0.0f, 0.0f, [[UIScreen mainScreen] bounds].size.width, 260)];
+    timelineImageView = [[EGOImageView alloc]initWithFrame:CGRectMake(0.0f, 0.0f, [[UIScreen mainScreen] bounds].size.width, 240)];
     [cellView addSubview:timelineImageView];
     //添加标题
     titleLabel = [[KMGillSansLightLabel alloc]initWithFrame:CGRectMake(0.0f, 0.0f, [[UIScreen mainScreen] bounds].size.width, 30.0f)];

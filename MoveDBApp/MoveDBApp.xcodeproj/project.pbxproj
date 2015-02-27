@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B9529BCB1AA06CDC0029F00D /* UIView+MJAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9529BCA1AA06CDC0029F00D /* UIView+MJAlertView.m */; };
+		B9529BD01AA06DE70029F00D /* NSString+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = B9529BCD1AA06DE70029F00D /* NSString+Base.m */; };
+		B9529BD11AA06DE70029F00D /* UIViewController+Functions.m in Sources */ = {isa = PBXBuildFile; fileRef = B9529BCF1AA06DE70029F00D /* UIViewController+Functions.m */; };
+		B9529BDE1AA06E0B0029F00D /* UIButton+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = B9529BD31AA06E0B0029F00D /* UIButton+Base.m */; };
+		B9529BDF1AA06E0B0029F00D /* UIColor+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = B9529BD51AA06E0B0029F00D /* UIColor+Base.m */; };
+		B9529BE01AA06E0B0029F00D /* UIFont+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = B9529BD71AA06E0B0029F00D /* UIFont+Base.m */; };
+		B9529BE11AA06E0B0029F00D /* UIImage+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = B9529BD91AA06E0B0029F00D /* UIImage+Base.m */; };
+		B9529BE21AA06E0B0029F00D /* UILabel+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = B9529BDB1AA06E0B0029F00D /* UILabel+Base.m */; };
+		B9529BE31AA06E0B0029F00D /* UIView+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = B9529BDD1AA06E0B0029F00D /* UIView+Base.m */; };
 		B9BBD93E1A9F082E00A551D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BBD93D1A9F082E00A551D9 /* main.m */; };
 		B9BBD9411A9F082E00A551D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BBD9401A9F082E00A551D9 /* AppDelegate.m */; };
 		B9BBD9441A9F082E00A551D9 /* MoveDBApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B9BBD9421A9F082E00A551D9 /* MoveDBApp.xcdatamodeld */; };
@@ -92,6 +101,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B9529BC91AA06CDC0029F00D /* UIView+MJAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJAlertView.h"; sourceTree = "<group>"; };
+		B9529BCA1AA06CDC0029F00D /* UIView+MJAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJAlertView.m"; sourceTree = "<group>"; };
+		B9529BCC1AA06DE70029F00D /* NSString+Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base.h"; sourceTree = "<group>"; };
+		B9529BCD1AA06DE70029F00D /* NSString+Base.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base.m"; sourceTree = "<group>"; };
+		B9529BCE1AA06DE70029F00D /* UIViewController+Functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Functions.h"; sourceTree = "<group>"; };
+		B9529BCF1AA06DE70029F00D /* UIViewController+Functions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Functions.m"; sourceTree = "<group>"; };
+		B9529BD21AA06E0B0029F00D /* UIButton+Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Base.h"; sourceTree = "<group>"; };
+		B9529BD31AA06E0B0029F00D /* UIButton+Base.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Base.m"; sourceTree = "<group>"; };
+		B9529BD41AA06E0B0029F00D /* UIColor+Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Base.h"; sourceTree = "<group>"; };
+		B9529BD51AA06E0B0029F00D /* UIColor+Base.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Base.m"; sourceTree = "<group>"; };
+		B9529BD61AA06E0B0029F00D /* UIFont+Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Base.h"; sourceTree = "<group>"; };
+		B9529BD71AA06E0B0029F00D /* UIFont+Base.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Base.m"; sourceTree = "<group>"; };
+		B9529BD81AA06E0B0029F00D /* UIImage+Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Base.h"; sourceTree = "<group>"; };
+		B9529BD91AA06E0B0029F00D /* UIImage+Base.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Base.m"; sourceTree = "<group>"; };
+		B9529BDA1AA06E0B0029F00D /* UILabel+Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Base.h"; sourceTree = "<group>"; };
+		B9529BDB1AA06E0B0029F00D /* UILabel+Base.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Base.m"; sourceTree = "<group>"; };
+		B9529BDC1AA06E0B0029F00D /* UIView+Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Base.h"; sourceTree = "<group>"; };
+		B9529BDD1AA06E0B0029F00D /* UIView+Base.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Base.m"; sourceTree = "<group>"; };
 		B9BBD9381A9F082E00A551D9 /* MoveDBApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoveDBApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9BBD93C1A9F082E00A551D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B9BBD93D1A9F082E00A551D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -414,6 +441,24 @@
 		B9E3D68A1A9F1F7E007D25A4 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				B9529BD21AA06E0B0029F00D /* UIButton+Base.h */,
+				B9529BD31AA06E0B0029F00D /* UIButton+Base.m */,
+				B9529BD41AA06E0B0029F00D /* UIColor+Base.h */,
+				B9529BD51AA06E0B0029F00D /* UIColor+Base.m */,
+				B9529BD61AA06E0B0029F00D /* UIFont+Base.h */,
+				B9529BD71AA06E0B0029F00D /* UIFont+Base.m */,
+				B9529BD81AA06E0B0029F00D /* UIImage+Base.h */,
+				B9529BD91AA06E0B0029F00D /* UIImage+Base.m */,
+				B9529BDA1AA06E0B0029F00D /* UILabel+Base.h */,
+				B9529BDB1AA06E0B0029F00D /* UILabel+Base.m */,
+				B9529BDC1AA06E0B0029F00D /* UIView+Base.h */,
+				B9529BDD1AA06E0B0029F00D /* UIView+Base.m */,
+				B9529BCC1AA06DE70029F00D /* NSString+Base.h */,
+				B9529BCD1AA06DE70029F00D /* NSString+Base.m */,
+				B9529BCE1AA06DE70029F00D /* UIViewController+Functions.h */,
+				B9529BCF1AA06DE70029F00D /* UIViewController+Functions.m */,
+				B9529BC91AA06CDC0029F00D /* UIView+MJAlertView.h */,
+				B9529BCA1AA06CDC0029F00D /* UIView+MJAlertView.m */,
 				B9E3D68B1A9F1F7E007D25A4 /* KM_NSArray+SafeValues.h */,
 				B9E3D68C1A9F1F7E007D25A4 /* KM_NSArray+SafeValues.m */,
 				B9E3D68D1A9F1F7E007D25A4 /* KM_NSDictionary+SafeValues.h */,
@@ -750,6 +795,7 @@
 				B9E3D73F1A9F23BB007D25A4 /* AFURLRequestSerialization.m in Sources */,
 				B9E3D7481A9F23BB007D25A4 /* UIImageView+AFNetworking.m in Sources */,
 				B9E3D6871A9F19F0007D25A4 /* EGOImageView.m in Sources */,
+				B9529BE21AA06E0B0029F00D /* UILabel+Base.m in Sources */,
 				B9E3D6B11A9F1F7E007D25A4 /* KMIndexedCollectionView.m in Sources */,
 				B9E3D6A71A9F1F7E007D25A4 /* KM_NSArray+SafeValues.m in Sources */,
 				B9E3D6861A9F19F0007D25A4 /* EGOImageLoader.m in Sources */,
@@ -757,7 +803,9 @@
 				B9E3D73E1A9F23BB007D25A4 /* AFURLConnectionOperation.m in Sources */,
 				B9E3D7451A9F23BB007D25A4 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				B9E3D6AE1A9F1F7E007D25A4 /* KMGillSansLabel.m in Sources */,
+				B9529BE01AA06E0B0029F00D /* UIFont+Base.m in Sources */,
 				B9E3D7561A9F23BB007D25A4 /* UIButton+WebCache.m in Sources */,
+				B9529BE11AA06E0B0029F00D /* UIImage+Base.m in Sources */,
 				B9E3D7711A9F24F0007D25A4 /* KMMovieDetailsSource.m in Sources */,
 				B9E3D6A91A9F1F7E007D25A4 /* KM_NSString+UrlEncoding.m in Sources */,
 				B9E3D74E1A9F23BB007D25A4 /* NSData+ImageContentType.m in Sources */,
@@ -769,8 +817,10 @@
 				B9BBD9441A9F082E00A551D9 /* MoveDBApp.xcdatamodeld in Sources */,
 				B9E3D6561A9F196F007D25A4 /* KMDiscoverListCell.m in Sources */,
 				B9E3D75A1A9F23BB007D25A4 /* UIImageView+WebCache.m in Sources */,
+				B9529BDE1AA06E0B0029F00D /* UIButton+Base.m in Sources */,
 				B9E3D7541A9F23BB007D25A4 /* SDWebImageManager.m in Sources */,
 				B9E3D73C1A9F23BB007D25A4 /* AFNetworkReachabilityManager.m in Sources */,
+				B9529BD11AA06DE70029F00D /* UIViewController+Functions.m in Sources */,
 				B9E3D7731A9F24F0007D25A4 /* KMSimilarMoviesSource.m in Sources */,
 				B9E3D6B31A9F1F7E007D25A4 /* StoryBoardUtilities.m in Sources */,
 				B9BBD9411A9F082E00A551D9 /* AppDelegate.m in Sources */,
@@ -789,9 +839,11 @@
 				B9E3D7491A9F23BB007D25A4 /* UIProgressView+AFNetworking.m in Sources */,
 				B9E3D6AF1A9F1F7E007D25A4 /* KMActivityIndicator.m in Sources */,
 				B9E3D7581A9F23BB007D25A4 /* UIImage+MultiFormat.m in Sources */,
+				B9529BD01AA06DE70029F00D /* NSString+Base.m in Sources */,
 				B9E3D7571A9F23BB007D25A4 /* UIImage+GIF.m in Sources */,
 				B9E3D6AD1A9F1F7E007D25A4 /* UIFont+GillSansFonts.m in Sources */,
 				B9E3D76D1A9F24F0007D25A4 /* KMDiscoverSource.m in Sources */,
+				B9529BDF1AA06E0B0029F00D /* UIColor+Base.m in Sources */,
 				B9E3D6AC1A9F1F7E007D25A4 /* NSString+MD5.m in Sources */,
 				B9E3D6B01A9F1F7E007D25A4 /* KMDetailsPageView.m in Sources */,
 				B9E3D73D1A9F23BB007D25A4 /* AFSecurityPolicy.m in Sources */,
@@ -803,11 +855,13 @@
 				B9E3D7531A9F23BB007D25A4 /* SDWebImageDownloaderOperation.m in Sources */,
 				B9E3D7431A9F23BB007D25A4 /* README.md in Sources */,
 				B9E3D7521A9F23BB007D25A4 /* SDWebImageDownloader.m in Sources */,
+				B9529BE31AA06E0B0029F00D /* UIView+Base.m in Sources */,
 				B9E3D6851A9F19F0007D25A4 /* EGOImageLoadConnection.m in Sources */,
 				B9E3D7391A9F23BB007D25A4 /* AFHTTPRequestOperation.m in Sources */,
 				B9E3D6A81A9F1F7E007D25A4 /* KM_NSDictionary+SafeValues.m in Sources */,
 				B9E3D74B1A9F23BB007D25A4 /* UIWebView+AFNetworking.m in Sources */,
 				B9E3D7401A9F23BB007D25A4 /* AFURLResponseSerialization.m in Sources */,
+				B9529BCB1AA06CDC0029F00D /* UIView+MJAlertView.m in Sources */,
 				B9E3D6831A9F19F0007D25A4 /* EGOCache.m in Sources */,
 				B9E3D74A1A9F23BB007D25A4 /* UIRefreshControl+AFNetworking.m in Sources */,
 			);
