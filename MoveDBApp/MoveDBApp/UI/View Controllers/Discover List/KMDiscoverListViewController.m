@@ -12,6 +12,8 @@
 #import "KMDiscoverSource.h"
 #import "KMMovie.h"
 #import "UIView+MJAlertView.h"
+#import "AppDelegate.h"
+
 NSString * const KMDiscoverListMenuCellReuseIdentifier = @"Drawer Cell";
 @interface KMDiscoverListViewController ()
 
@@ -25,7 +27,7 @@ NSString * const KMDiscoverListMenuCellReuseIdentifier = @"Drawer Cell";
 #pragma mark Init Methods
 - (instancetype)init {
     if ((self = [super init])) {
-        
+        _pageIndex=1;
     }
     return self;
 }
@@ -84,7 +86,19 @@ NSString * const KMDiscoverListMenuCellReuseIdentifier = @"Drawer Cell";
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 240;
+    //获取适配屏幕系数,适配6 6p 5s
+    AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
+    switch (myDelegate.ScreenWidth) {
+        case 414:
+            return 310;
+            break;
+        case 375:
+            return 280;
+        default:
+            return 240;
+            break;
+    }
+
 }
 #pragma mark -
 #pragma mark Network Requests methods
@@ -118,7 +132,7 @@ NSString * const KMDiscoverListMenuCellReuseIdentifier = @"Drawer Cell";
 {
     self.refreshControl.attributedTitle = [[NSAttributedString alloc]initWithString:@"一头驴在拼命的跑...."];
     //为了保证每一次刷新都是看到不同的信息,我让索引是累加的
-    _pageIndex++;
+    ++_pageIndex;
     [self requestMovies];
 }
 

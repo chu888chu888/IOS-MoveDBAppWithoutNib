@@ -10,8 +10,6 @@
 #import "KMDiscoverListViewController.h"
 #import "AFNetworkActivityLogger.h"
 
-#define ScreenHeight [[UIScreen mainScreen] bounds].size.height
-#define ScreenWidth  [[UIScreen mainScreen] bounds].size.width
 
 @interface AppDelegate ()
 
@@ -35,9 +33,13 @@
     
     //获取适配屏幕系数
     AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
-    if(ScreenHeight > 480){
-        myDelegate.autoSizeScaleX = ScreenWidth/320;
-        myDelegate.autoSizeScaleY = ScreenHeight/568;
+    myDelegate.ScreenHeight=[[UIScreen mainScreen] bounds].size.height;
+    myDelegate.ScreenWidth=[[UIScreen mainScreen] bounds].size.width;
+    NSLog(@"ScreenWidth:%f,ScreenWidth:%f",myDelegate.ScreenWidth,myDelegate.ScreenHeight);
+    if([[UIScreen mainScreen] bounds].size.height > 480){
+        myDelegate.autoSizeScaleX = [[UIScreen mainScreen] bounds].size.width/320;
+        myDelegate.autoSizeScaleY = [[UIScreen mainScreen] bounds].size.height/568;
+
     }else{
         myDelegate.autoSizeScaleX = 1.0;
         myDelegate.autoSizeScaleY = 1.0;

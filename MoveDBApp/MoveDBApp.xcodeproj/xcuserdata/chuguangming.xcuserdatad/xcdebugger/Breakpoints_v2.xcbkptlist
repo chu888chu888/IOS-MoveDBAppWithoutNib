@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MoveDBApp/AppDelegate.m"
-            timestampString = "446788474.673415"
+            timestampString = "446802861.8521"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
             landmarkName = "-application:didFinishLaunchingWithOptions:"
             landmarkType = "5">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MoveDBApp/UI/View Controllers/Discover List/KMDiscoverListViewController.m"
-            timestampString = "446789172.835522"
+            timestampString = "446803061.316539"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "111"
-            endingLineNumber = "111"
+            startingLineNumber = "125"
+            endingLineNumber = "125"
             landmarkName = "-requestMovies"
             landmarkType = "5">
          </BreakpointContent>

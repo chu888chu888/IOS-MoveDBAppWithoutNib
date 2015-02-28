@@ -16,6 +16,8 @@
 
 @property float autoSizeScaleX;
 @property float autoSizeScaleY;
+@property int ScreenHeight;
+@property int ScreenWidth;
 
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;

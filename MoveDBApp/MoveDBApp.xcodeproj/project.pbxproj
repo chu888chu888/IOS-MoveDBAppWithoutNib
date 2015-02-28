@@ -23,6 +23,7 @@
 		B9529BF51AA071320029F00D /* CSLinearLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9529BEF1AA071320029F00D /* CSLinearLayoutView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		B9529BF61AA071320029F00D /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = B9529BF01AA071320029F00D /* LICENSE */; };
 		B9529BF71AA071320029F00D /* readme.markdown in Sources */ = {isa = PBXBuildFile; fileRef = B9529BF11AA071320029F00D /* readme.markdown */; };
+		B9548E141AA1A9C400B6173D /* NSString+STRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = B9548E131AA1A9C400B6173D /* NSString+STRegex.m */; };
 		B9BBD93E1A9F082E00A551D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BBD93D1A9F082E00A551D9 /* main.m */; };
 		B9BBD9411A9F082E00A551D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BBD9401A9F082E00A551D9 /* AppDelegate.m */; };
 		B9BBD9441A9F082E00A551D9 /* MoveDBApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B9BBD9421A9F082E00A551D9 /* MoveDBApp.xcdatamodeld */; };
@@ -136,6 +137,8 @@
 		B9529BEF1AA071320029F00D /* CSLinearLayoutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLinearLayoutView.m; sourceTree = "<group>"; };
 		B9529BF01AA071320029F00D /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		B9529BF11AA071320029F00D /* readme.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.markdown; sourceTree = "<group>"; };
+		B9548E121AA1A9C400B6173D /* NSString+STRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+STRegex.h"; sourceTree = "<group>"; };
+		B9548E131AA1A9C400B6173D /* NSString+STRegex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+STRegex.m"; sourceTree = "<group>"; };
 		B9BBD9381A9F082E00A551D9 /* MoveDBApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoveDBApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9BBD93C1A9F082E00A551D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B9BBD93D1A9F082E00A551D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -499,6 +502,8 @@
 		B9E3D68A1A9F1F7E007D25A4 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				B9548E121AA1A9C400B6173D /* NSString+STRegex.h */,
+				B9548E131AA1A9C400B6173D /* NSString+STRegex.m */,
 				B9529BD21AA06E0B0029F00D /* UIButton+Base.h */,
 				B9529BD31AA06E0B0029F00D /* UIButton+Base.m */,
 				B9529BD41AA06E0B0029F00D /* UIColor+Base.h */,
@@ -887,6 +892,7 @@
 				B9E3D7731A9F24F0007D25A4 /* KMSimilarMoviesSource.m in Sources */,
 				B9E3D6B31A9F1F7E007D25A4 /* StoryBoardUtilities.m in Sources */,
 				B9BBD9411A9F082E00A551D9 /* AppDelegate.m in Sources */,
+				B9548E141AA1A9C400B6173D /* NSString+STRegex.m in Sources */,
 				B9E3D7501A9F23BB007D25A4 /* SDWebImageCompat.m in Sources */,
 				B9E3D74F1A9F23BB007D25A4 /* SDImageCache.m in Sources */,
 				B9E3D7411A9F23BB007D25A4 /* AFURLSessionManager.m in Sources */,
