@@ -16,14 +16,19 @@ NSString * const KMDiscoverListMenuCellReuseIdentifier = @"Drawer Cell";
 @interface KMDiscoverListViewController ()
 
 @property (nonatomic, strong) NSMutableArray* dataSource;
-
+@property (nonatomic) NSInteger pageIndex;
 @end
 
 @implementation KMDiscoverListViewController
 
 #pragma mark -
 #pragma mark Init Methods
-
+- (instancetype)init {
+    if ((self = [super init])) {
+        
+    }
+    return self;
+}
 
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -37,7 +42,6 @@ NSString * const KMDiscoverListMenuCellReuseIdentifier = @"Drawer Cell";
     _KMDiscoverActivityIndicatorView.center=self.view.center;
     [_KMDiscoverActivityIndicatorView startAnimating];
     [self.view addSubview:_KMDiscoverActivityIndicatorView];
-    
     
     [self setupTableView];
     [self requestMovies];
@@ -72,6 +76,10 @@ NSString * const KMDiscoverListMenuCellReuseIdentifier = @"Drawer Cell";
     self.refreshControl=[[UIRefreshControl alloc]initWithFrame:CGRectMake(0, -44, 320, 44)];
     [self.refreshControl addTarget:self action:@selector(refreshFeed) forControlEvents:UIControlEventValueChanged];
     [self.tableView.tableHeaderView addSubview:self.refreshControl];
+    
+    //设置刷新按钮
+    UIBarButtonItem *refreshBarButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(refreshFeedForRightItem)];
+    self.navigationItem.rightBarButtonItem = refreshBarButton;
 
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -94,14 +102,14 @@ NSString * const KMDiscoverListMenuCellReuseIdentifier = @"Drawer Cell";
         }
         else
         {
-            //[self.networkLoadingViewController showErrorView];
-            //加入显示错误的提示
             [UIView addMJNotifierWithText:@"网络故障请重试" dismissAutomatically:YES];
         }
 
     };
+    
+
     KMDiscoverSource* source = [KMDiscoverSource discoverSource];
-    [source getDiscoverList:@"1" completion:completionBlock];
+    [source getDiscoverList:[NSString stringWithFormat: @"%ld", (long)_pageIndex] completion:completionBlock];
 }
 
 
@@ -109,10 +117,18 @@ NSString * const KMDiscoverListMenuCellReuseIdentifier = @"Drawer Cell";
 - (void)refreshFeed
 {
     self.refreshControl.attributedTitle = [[NSAttributedString alloc]initWithString:@"一头驴在拼命的跑...."];
+    //为了保证每一次刷新都是看到不同的信息,我让索引是累加的
+    _pageIndex++;
     [self requestMovies];
 }
 
-
+- (void)refreshFeedForRightItem
+{
+    self.refreshControl.attributedTitle = [[NSAttributedString alloc]initWithString:@"一头驴在拼命的跑...."];
+    //如果是从导航条上的刷新按钮传递过来的事件的话,我就从第一个索引开始
+    _pageIndex=1;
+    [self requestMovies];
+}
 
 #pragma mark -
 #pragma mark Fetched Data Processing

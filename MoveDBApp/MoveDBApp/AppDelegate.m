@@ -8,6 +8,11 @@
 
 #import "AppDelegate.h"
 #import "KMDiscoverListViewController.h"
+#import "AFNetworkActivityLogger.h"
+
+#define ScreenHeight [[UIScreen mainScreen] bounds].size.height
+#define ScreenWidth  [[UIScreen mainScreen] bounds].size.width
+
 @interface AppDelegate ()
 
 @end
@@ -24,19 +29,26 @@
     return YES;
     */
     
-
+    //加入数据监视器
+    [[AFNetworkActivityLogger sharedLogger] startLogging];
+    [[AFNetworkActivityLogger sharedLogger] setLevel:AFLoggerLevelDebug];
+    
+    //获取适配屏幕系数
+    AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
+    if(ScreenHeight > 480){
+        myDelegate.autoSizeScaleX = ScreenWidth/320;
+        myDelegate.autoSizeScaleY = ScreenHeight/568;
+    }else{
+        myDelegate.autoSizeScaleX = 1.0;
+        myDelegate.autoSizeScaleY = 1.0;
+    }
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    
-   
     KMDiscoverListViewController *kmDiscoverListVC=[[KMDiscoverListViewController alloc]init];
-    
     UINavigationController *navigationController=[[UINavigationController alloc]initWithRootViewController:kmDiscoverListVC];
-    
     [self.window setRootViewController:navigationController];
-    
     [self setupNavigationTitleLabelStyle];
     [self setupStatusBarStyle];
-    
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
