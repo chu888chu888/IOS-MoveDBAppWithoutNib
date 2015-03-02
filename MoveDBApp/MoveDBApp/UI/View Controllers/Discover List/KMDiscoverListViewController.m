@@ -180,8 +180,9 @@ NSString * const KMDiscoverListMenuCellReuseIdentifier = @"Drawer Cell";
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     KMDiscoverListCell* cell = (KMDiscoverListCell*)[tableView dequeueReusableCellWithIdentifier:KMDiscoverListMenuCellReuseIdentifier forIndexPath:indexPath];
+    
     [cell.timelineImageView setImageURL:[NSURL URLWithString:[[self.dataSource objectAtIndex:indexPath.row] movieOriginalBackdropImageUrl]]];
-    //NSLog(@"图片地址:%@",[[self.dataSource objectAtIndex:indexPath.row] movieOriginalBackdropImageUrl]);
+    //NSLog(@"图片地址:%@",[[self.dataSource objectAtIndex:indexPath.row] movieOriginalPosterImageUrl]);
     
     [cell.titleLabel setText:[[self.dataSource objectAtIndex:indexPath.row] movieTitle]];
     return cell;
