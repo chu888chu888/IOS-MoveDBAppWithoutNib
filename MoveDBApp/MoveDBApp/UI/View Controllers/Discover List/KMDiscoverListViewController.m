@@ -13,7 +13,7 @@
 #import "KMMovie.h"
 #import "UIView+MJAlertView.h"
 #import "AppDelegate.h"
-
+#import "KMMovieDetailsViewController.h"
 NSString * const KMDiscoverListMenuCellReuseIdentifier = @"Drawer Cell";
 @interface KMDiscoverListViewController ()
 
@@ -188,6 +188,14 @@ NSString * const KMDiscoverListMenuCellReuseIdentifier = @"Drawer Cell";
     return cell;
     
 }
+#pragma mark -
+#pragma mark UITableViewDelegate
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
+{
+    KMMovieDetailsViewController* viewController = [[KMMovieDetailsViewController alloc]init];
+    [self.navigationController pushViewController:viewController animated:YES];
+    viewController.movieDetails = [self.dataSource objectAtIndex:indexPath.row];
+}
 
 @end

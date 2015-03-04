@@ -106,6 +106,23 @@
 		B9E3D7741A9F24F0007D25A4 /* KMSimilarMoviesSourceJsonPattern.json in Resources */ = {isa = PBXBuildFile; fileRef = B9E3D76C1A9F24F0007D25A4 /* KMSimilarMoviesSourceJsonPattern.json */; };
 		B9E3D7781A9F253A007D25A4 /* KMMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E3D7771A9F253A007D25A4 /* KMMovie.m */; };
 		B9E3D77D1A9F26E5007D25A4 /* KMSourceConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = B9E3D77C1A9F26E5007D25A4 /* KMSourceConfig.plist */; };
+		B9F394751AA5A3E4002AD0E9 /* KMComposeCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9F3945E1AA5A3E4002AD0E9 /* KMComposeCommentCell.m */; };
+		B9F394761AA5A3E4002AD0E9 /* KMComposeCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9F3945F1AA5A3E4002AD0E9 /* KMComposeCommentCell.xib */; };
+		B9F394771AA5A3E4002AD0E9 /* KMMovieDetailsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9F394611AA5A3E4002AD0E9 /* KMMovieDetailsCell.m */; };
+		B9F394781AA5A3E4002AD0E9 /* KMMovieDetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9F394621AA5A3E4002AD0E9 /* KMMovieDetailsCell.xib */; };
+		B9F394791AA5A3E4002AD0E9 /* KMMovieDetailsCommentsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9F394641AA5A3E4002AD0E9 /* KMMovieDetailsCommentsCell.m */; };
+		B9F3947A1AA5A3E4002AD0E9 /* KMMovieDetailsCommentsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9F394651AA5A3E4002AD0E9 /* KMMovieDetailsCommentsCell.xib */; };
+		B9F3947B1AA5A3E4002AD0E9 /* KMMovieDetailsDescriptionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9F394671AA5A3E4002AD0E9 /* KMMovieDetailsDescriptionCell.m */; };
+		B9F3947C1AA5A3E4002AD0E9 /* KMMovieDetailsDescriptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9F394681AA5A3E4002AD0E9 /* KMMovieDetailsDescriptionCell.xib */; };
+		B9F3947D1AA5A3E4002AD0E9 /* KMMovieDetailsPopularityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9F3946A1AA5A3E4002AD0E9 /* KMMovieDetailsPopularityCell.m */; };
+		B9F3947E1AA5A3E4002AD0E9 /* KMMovieDetailsPopularityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9F3946B1AA5A3E4002AD0E9 /* KMMovieDetailsPopularityCell.xib */; };
+		B9F3947F1AA5A3E4002AD0E9 /* KMMovieDetailsSimilarMoviesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9F3946D1AA5A3E4002AD0E9 /* KMMovieDetailsSimilarMoviesCell.m */; };
+		B9F394801AA5A3E4002AD0E9 /* KMMovieDetailsSimilarMoviesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9F3946E1AA5A3E4002AD0E9 /* KMMovieDetailsSimilarMoviesCell.xib */; };
+		B9F394811AA5A3E4002AD0E9 /* KMMovieDetailsViewAllCommentsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9F394701AA5A3E4002AD0E9 /* KMMovieDetailsViewAllCommentsCell.m */; };
+		B9F394821AA5A3E4002AD0E9 /* KMMovieDetailsViewAllCommentsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9F394711AA5A3E4002AD0E9 /* KMMovieDetailsViewAllCommentsCell.xib */; };
+		B9F394831AA5A3E4002AD0E9 /* KMSimilarMoviesCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9F394731AA5A3E4002AD0E9 /* KMSimilarMoviesCollectionViewCell.m */; };
+		B9F394841AA5A3E4002AD0E9 /* KMSimilarMoviesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9F394741AA5A3E4002AD0E9 /* KMSimilarMoviesCollectionViewCell.xib */; };
+		B9F394871AA5A442002AD0E9 /* KMMovieDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9F394861AA5A442002AD0E9 /* KMMovieDetailsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -216,8 +233,8 @@
 		B9E3D69B1A9F1F7E007D25A4 /* KMGillSansLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMGillSansLabel.m; sourceTree = "<group>"; };
 		B9E3D69D1A9F1F7E007D25A4 /* KMActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMActivityIndicator.h; sourceTree = "<group>"; };
 		B9E3D69E1A9F1F7E007D25A4 /* KMActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMActivityIndicator.m; sourceTree = "<group>"; };
-		B9E3D69F1A9F1F7E007D25A4 /* KMDetailsPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMDetailsPageView.h; sourceTree = "<group>"; };
-		B9E3D6A01A9F1F7E007D25A4 /* KMDetailsPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMDetailsPageView.m; sourceTree = "<group>"; };
+		B9E3D69F1A9F1F7E007D25A4 /* KMDetailsPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KMDetailsPageView.h; path = Utilities/Tools/KMDetailsPageView.h; sourceTree = "<group>"; };
+		B9E3D6A01A9F1F7E007D25A4 /* KMDetailsPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KMDetailsPageView.m; path = Utilities/Tools/KMDetailsPageView.m; sourceTree = "<group>"; };
 		B9E3D6A11A9F1F7E007D25A4 /* KMIndexedCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMIndexedCollectionView.h; sourceTree = "<group>"; };
 		B9E3D6A21A9F1F7E007D25A4 /* KMIndexedCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMIndexedCollectionView.m; sourceTree = "<group>"; };
 		B9E3D6A31A9F1F7E007D25A4 /* KMNetworkLoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMNetworkLoadingViewController.h; sourceTree = "<group>"; };
@@ -309,6 +326,32 @@
 		B9E3D7761A9F253A007D25A4 /* KMMovie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMMovie.h; sourceTree = "<group>"; };
 		B9E3D7771A9F253A007D25A4 /* KMMovie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMMovie.m; sourceTree = "<group>"; };
 		B9E3D77C1A9F26E5007D25A4 /* KMSourceConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = KMSourceConfig.plist; sourceTree = "<group>"; };
+		B9F3945D1AA5A3E4002AD0E9 /* KMComposeCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMComposeCommentCell.h; sourceTree = "<group>"; };
+		B9F3945E1AA5A3E4002AD0E9 /* KMComposeCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMComposeCommentCell.m; sourceTree = "<group>"; };
+		B9F3945F1AA5A3E4002AD0E9 /* KMComposeCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KMComposeCommentCell.xib; sourceTree = "<group>"; };
+		B9F394601AA5A3E4002AD0E9 /* KMMovieDetailsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMMovieDetailsCell.h; sourceTree = "<group>"; };
+		B9F394611AA5A3E4002AD0E9 /* KMMovieDetailsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMMovieDetailsCell.m; sourceTree = "<group>"; };
+		B9F394621AA5A3E4002AD0E9 /* KMMovieDetailsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KMMovieDetailsCell.xib; sourceTree = "<group>"; };
+		B9F394631AA5A3E4002AD0E9 /* KMMovieDetailsCommentsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMMovieDetailsCommentsCell.h; sourceTree = "<group>"; };
+		B9F394641AA5A3E4002AD0E9 /* KMMovieDetailsCommentsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMMovieDetailsCommentsCell.m; sourceTree = "<group>"; };
+		B9F394651AA5A3E4002AD0E9 /* KMMovieDetailsCommentsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KMMovieDetailsCommentsCell.xib; sourceTree = "<group>"; };
+		B9F394661AA5A3E4002AD0E9 /* KMMovieDetailsDescriptionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMMovieDetailsDescriptionCell.h; sourceTree = "<group>"; };
+		B9F394671AA5A3E4002AD0E9 /* KMMovieDetailsDescriptionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMMovieDetailsDescriptionCell.m; sourceTree = "<group>"; };
+		B9F394681AA5A3E4002AD0E9 /* KMMovieDetailsDescriptionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KMMovieDetailsDescriptionCell.xib; sourceTree = "<group>"; };
+		B9F394691AA5A3E4002AD0E9 /* KMMovieDetailsPopularityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMMovieDetailsPopularityCell.h; sourceTree = "<group>"; };
+		B9F3946A1AA5A3E4002AD0E9 /* KMMovieDetailsPopularityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMMovieDetailsPopularityCell.m; sourceTree = "<group>"; };
+		B9F3946B1AA5A3E4002AD0E9 /* KMMovieDetailsPopularityCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KMMovieDetailsPopularityCell.xib; sourceTree = "<group>"; };
+		B9F3946C1AA5A3E4002AD0E9 /* KMMovieDetailsSimilarMoviesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMMovieDetailsSimilarMoviesCell.h; sourceTree = "<group>"; };
+		B9F3946D1AA5A3E4002AD0E9 /* KMMovieDetailsSimilarMoviesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMMovieDetailsSimilarMoviesCell.m; sourceTree = "<group>"; };
+		B9F3946E1AA5A3E4002AD0E9 /* KMMovieDetailsSimilarMoviesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KMMovieDetailsSimilarMoviesCell.xib; sourceTree = "<group>"; };
+		B9F3946F1AA5A3E4002AD0E9 /* KMMovieDetailsViewAllCommentsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMMovieDetailsViewAllCommentsCell.h; sourceTree = "<group>"; };
+		B9F394701AA5A3E4002AD0E9 /* KMMovieDetailsViewAllCommentsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMMovieDetailsViewAllCommentsCell.m; sourceTree = "<group>"; };
+		B9F394711AA5A3E4002AD0E9 /* KMMovieDetailsViewAllCommentsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KMMovieDetailsViewAllCommentsCell.xib; sourceTree = "<group>"; };
+		B9F394721AA5A3E4002AD0E9 /* KMSimilarMoviesCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMSimilarMoviesCollectionViewCell.h; sourceTree = "<group>"; };
+		B9F394731AA5A3E4002AD0E9 /* KMSimilarMoviesCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMSimilarMoviesCollectionViewCell.m; sourceTree = "<group>"; };
+		B9F394741AA5A3E4002AD0E9 /* KMSimilarMoviesCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KMSimilarMoviesCollectionViewCell.xib; sourceTree = "<group>"; };
+		B9F394851AA5A442002AD0E9 /* KMMovieDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KMMovieDetailsViewController.h; path = "UI/View Controllers/Movie Details Page/KMMovieDetailsViewController.h"; sourceTree = "<group>"; };
+		B9F394861AA5A442002AD0E9 /* KMMovieDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KMMovieDetailsViewController.m; path = "UI/View Controllers/Movie Details Page/KMMovieDetailsViewController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -485,6 +528,7 @@
 		B9E3D6491A9F1815007D25A4 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				B9F394881AA5AECD002AD0E9 /* View */,
 				B9E3D64A1A9F1842007D25A4 /* View Controllers */,
 			);
 			name = UI;
@@ -510,6 +554,9 @@
 		B9E3D64C1A9F186E007D25A4 /* Movie Details Page */ = {
 			isa = PBXGroup;
 			children = (
+				B9F3945C1AA5A3E4002AD0E9 /* Movie Details Cells */,
+				B9F394851AA5A442002AD0E9 /* KMMovieDetailsViewController.h */,
+				B9F394861AA5A442002AD0E9 /* KMMovieDetailsViewController.m */,
 			);
 			name = "Movie Details Page";
 			sourceTree = "<group>";
@@ -617,8 +664,6 @@
 			children = (
 				B9E3D69D1A9F1F7E007D25A4 /* KMActivityIndicator.h */,
 				B9E3D69E1A9F1F7E007D25A4 /* KMActivityIndicator.m */,
-				B9E3D69F1A9F1F7E007D25A4 /* KMDetailsPageView.h */,
-				B9E3D6A01A9F1F7E007D25A4 /* KMDetailsPageView.m */,
 				B9E3D6A11A9F1F7E007D25A4 /* KMIndexedCollectionView.h */,
 				B9E3D6A21A9F1F7E007D25A4 /* KMIndexedCollectionView.m */,
 				B9E3D6A31A9F1F7E007D25A4 /* KMNetworkLoadingViewController.h */,
@@ -813,6 +858,54 @@
 			path = "Network Config";
 			sourceTree = "<group>";
 		};
+		B9F3945C1AA5A3E4002AD0E9 /* Movie Details Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B9F3945D1AA5A3E4002AD0E9 /* KMComposeCommentCell.h */,
+				B9F3945E1AA5A3E4002AD0E9 /* KMComposeCommentCell.m */,
+				B9F3945F1AA5A3E4002AD0E9 /* KMComposeCommentCell.xib */,
+				B9F394601AA5A3E4002AD0E9 /* KMMovieDetailsCell.h */,
+				B9F394611AA5A3E4002AD0E9 /* KMMovieDetailsCell.m */,
+				B9F394621AA5A3E4002AD0E9 /* KMMovieDetailsCell.xib */,
+				B9F394631AA5A3E4002AD0E9 /* KMMovieDetailsCommentsCell.h */,
+				B9F394641AA5A3E4002AD0E9 /* KMMovieDetailsCommentsCell.m */,
+				B9F394651AA5A3E4002AD0E9 /* KMMovieDetailsCommentsCell.xib */,
+				B9F394661AA5A3E4002AD0E9 /* KMMovieDetailsDescriptionCell.h */,
+				B9F394671AA5A3E4002AD0E9 /* KMMovieDetailsDescriptionCell.m */,
+				B9F394681AA5A3E4002AD0E9 /* KMMovieDetailsDescriptionCell.xib */,
+				B9F394691AA5A3E4002AD0E9 /* KMMovieDetailsPopularityCell.h */,
+				B9F3946A1AA5A3E4002AD0E9 /* KMMovieDetailsPopularityCell.m */,
+				B9F3946B1AA5A3E4002AD0E9 /* KMMovieDetailsPopularityCell.xib */,
+				B9F3946C1AA5A3E4002AD0E9 /* KMMovieDetailsSimilarMoviesCell.h */,
+				B9F3946D1AA5A3E4002AD0E9 /* KMMovieDetailsSimilarMoviesCell.m */,
+				B9F3946E1AA5A3E4002AD0E9 /* KMMovieDetailsSimilarMoviesCell.xib */,
+				B9F3946F1AA5A3E4002AD0E9 /* KMMovieDetailsViewAllCommentsCell.h */,
+				B9F394701AA5A3E4002AD0E9 /* KMMovieDetailsViewAllCommentsCell.m */,
+				B9F394711AA5A3E4002AD0E9 /* KMMovieDetailsViewAllCommentsCell.xib */,
+				B9F394721AA5A3E4002AD0E9 /* KMSimilarMoviesCollectionViewCell.h */,
+				B9F394731AA5A3E4002AD0E9 /* KMSimilarMoviesCollectionViewCell.m */,
+				B9F394741AA5A3E4002AD0E9 /* KMSimilarMoviesCollectionViewCell.xib */,
+			);
+			path = "Movie Details Cells";
+			sourceTree = "<group>";
+		};
+		B9F394881AA5AECD002AD0E9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B9F394891AA5AED7002AD0E9 /* Movie Details Page */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B9F394891AA5AED7002AD0E9 /* Movie Details Page */ = {
+			isa = PBXGroup;
+			children = (
+				B9E3D69F1A9F1F7E007D25A4 /* KMDetailsPageView.h */,
+				B9E3D6A01A9F1F7E007D25A4 /* KMDetailsPageView.m */,
+			);
+			name = "Movie Details Page";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -894,15 +987,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				B91FCF001AA171BC001ED37C /* Images.xcassets in Resources */,
+				B9F394781AA5A3E4002AD0E9 /* KMMovieDetailsCell.xib in Resources */,
 				B9E3D7421A9F23BB007D25A4 /* LICENSE in Resources */,
 				B9BBD9491A9F082E00A551D9 /* LaunchScreen.xib in Resources */,
+				B9F394821AA5A3E4002AD0E9 /* KMMovieDetailsViewAllCommentsCell.xib in Resources */,
 				B9E3D7741A9F24F0007D25A4 /* KMSimilarMoviesSourceJsonPattern.json in Resources */,
+				B9F394761AA5A3E4002AD0E9 /* KMComposeCommentCell.xib in Resources */,
+				B9F394841AA5A3E4002AD0E9 /* KMSimilarMoviesCollectionViewCell.xib in Resources */,
+				B9F394801AA5A3E4002AD0E9 /* KMMovieDetailsSimilarMoviesCell.xib in Resources */,
 				B9E3D74C1A9F23BB007D25A4 /* LICENSE in Resources */,
+				B9F3947E1AA5A3E4002AD0E9 /* KMMovieDetailsPopularityCell.xib in Resources */,
 				B90B9F181AA45F5A005967C0 /* SAMCategories.bundle in Resources */,
 				B9E3D7721A9F24F0007D25A4 /* KMMovieDetailsSourceJsonPattern.json in Resources */,
 				B9E3D77D1A9F26E5007D25A4 /* KMSourceConfig.plist in Resources */,
 				B9529BF61AA071320029F00D /* LICENSE in Resources */,
 				B9E3D76E1A9F24F0007D25A4 /* KMDiscoverSourceJsonPattern.json in Resources */,
+				B9F3947C1AA5A3E4002AD0E9 /* KMMovieDetailsDescriptionCell.xib in Resources */,
+				B9F3947A1AA5A3E4002AD0E9 /* KMMovieDetailsCommentsCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -920,9 +1021,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9F3947B1AA5A3E4002AD0E9 /* KMMovieDetailsDescriptionCell.m in Sources */,
 				B9E3D73F1A9F23BB007D25A4 /* AFURLRequestSerialization.m in Sources */,
 				B9529BF51AA071320029F00D /* CSLinearLayoutView.m in Sources */,
 				B9E3D7481A9F23BB007D25A4 /* UIImageView+AFNetworking.m in Sources */,
+				B9F394871AA5A442002AD0E9 /* KMMovieDetailsViewController.m in Sources */,
 				B9E3D6871A9F19F0007D25A4 /* EGOImageView.m in Sources */,
 				B90B9F161AA45F5A005967C0 /* NSURL+SAMAdditions.m in Sources */,
 				B9E3D6B11A9F1F7E007D25A4 /* KMIndexedCollectionView.m in Sources */,
@@ -931,13 +1034,17 @@
 				B90B9F131AA45F5A005967C0 /* NSNumber+SAMAdditions.m in Sources */,
 				B9E3D7701A9F24F0007D25A4 /* KMSourceConfig.m in Sources */,
 				B90B9F1D1AA45F5A005967C0 /* UIScreen+SAMAdditions.m in Sources */,
+				B9F3947F1AA5A3E4002AD0E9 /* KMMovieDetailsSimilarMoviesCell.m in Sources */,
 				B90B9F151AA45F5A005967C0 /* NSString+SAMAdditions.m in Sources */,
 				B90B9F111AA45F5A005967C0 /* NSDate+SAMAdditions.m in Sources */,
+				B9F3947D1AA5A3E4002AD0E9 /* KMMovieDetailsPopularityCell.m in Sources */,
 				B9E3D73E1A9F23BB007D25A4 /* AFURLConnectionOperation.m in Sources */,
 				B9E3D7451A9F23BB007D25A4 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				B9E3D6AE1A9F1F7E007D25A4 /* KMGillSansLabel.m in Sources */,
 				B9529BF31AA071320029F00D /* AFHTTPRequestSerializer+OAuth2.m in Sources */,
 				B9E3D7561A9F23BB007D25A4 /* UIButton+WebCache.m in Sources */,
+				B9F394811AA5A3E4002AD0E9 /* KMMovieDetailsViewAllCommentsCell.m in Sources */,
+				B9F394751AA5A3E4002AD0E9 /* KMComposeCommentCell.m in Sources */,
 				B9E3D7711A9F24F0007D25A4 /* KMMovieDetailsSource.m in Sources */,
 				B9529BF41AA071320029F00D /* AFOAuth2Manager.m in Sources */,
 				B90B9F1C1AA45F5A005967C0 /* UIDevice+SAMAdditions.m in Sources */,
@@ -972,10 +1079,12 @@
 				B9E3D7591A9F23BB007D25A4 /* UIImageView+HighlightedWebCache.m in Sources */,
 				B90B9F201AA45F5A005967C0 /* UIViewController+SAMAdditions.m in Sources */,
 				B9BBD93E1A9F082E00A551D9 /* main.m in Sources */,
+				B9F394771AA5A3E4002AD0E9 /* KMMovieDetailsCell.m in Sources */,
 				B9E3D7441A9F23BB007D25A4 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				B9E3D74D1A9F23BB007D25A4 /* README.md in Sources */,
 				B9E3D6881A9F19F0007D25A4 /* KIImagePager.m in Sources */,
 				B9E3D7491A9F23BB007D25A4 /* UIProgressView+AFNetworking.m in Sources */,
+				B9F394791AA5A3E4002AD0E9 /* KMMovieDetailsCommentsCell.m in Sources */,
 				B9E3D6AF1A9F1F7E007D25A4 /* KMActivityIndicator.m in Sources */,
 				B9E3D7581A9F23BB007D25A4 /* UIImage+MultiFormat.m in Sources */,
 				B9529BD01AA06DE70029F00D /* NSString+Base.m in Sources */,
@@ -986,6 +1095,7 @@
 				B90B9F0F1AA45F5A005967C0 /* NSArray+SAMAdditions.m in Sources */,
 				B90B9F1B1AA45F5A005967C0 /* UIControl+SAMAdditions.m in Sources */,
 				B9E3D6B01A9F1F7E007D25A4 /* KMDetailsPageView.m in Sources */,
+				B9F394831AA5A3E4002AD0E9 /* KMSimilarMoviesCollectionViewCell.m in Sources */,
 				B90B9F141AA45F5A005967C0 /* NSObject+SAMAdditions.m in Sources */,
 				B9E3D73D1A9F23BB007D25A4 /* AFSecurityPolicy.m in Sources */,
 				B9E3D73A1A9F23BB007D25A4 /* AFHTTPRequestOperationManager.m in Sources */,

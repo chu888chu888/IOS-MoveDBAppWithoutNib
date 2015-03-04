@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "KMDiscoverListViewController.h"
 #import "AFNetworkActivityLogger.h"
-
+#import "KMMovieDetailsViewController.h"
 
 @interface AppDelegate ()
 
@@ -19,23 +19,28 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+   
+    
     /*
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    KMMovieDetailsViewController *vc=[[KMMovieDetailsViewController alloc]init];
+    [self.window setRootViewController:vc];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
-    */
+     */
+    
     
     //加入数据监视器
-    [[AFNetworkActivityLogger sharedLogger] startLogging];
-    [[AFNetworkActivityLogger sharedLogger] setLevel:AFLoggerLevelDebug];
+    //[[AFNetworkActivityLogger sharedLogger] startLogging];
+    //[[AFNetworkActivityLogger sharedLogger] setLevel:AFLoggerLevelDebug];
     
     //获取适配屏幕系数
     AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
     myDelegate.ScreenHeight=[[UIScreen mainScreen] bounds].size.height;
     myDelegate.ScreenWidth=[[UIScreen mainScreen] bounds].size.width;
-    NSLog(@"ScreenWidth:%f,ScreenWidth:%f",myDelegate.ScreenWidth,myDelegate.ScreenHeight);
+    //NSLog(@"ScreenWidth:%f,ScreenWidth:%f",myDelegate.ScreenWidth,myDelegate.ScreenHeight);
     if([[UIScreen mainScreen] bounds].size.height > 480){
         myDelegate.autoSizeScaleX = [[UIScreen mainScreen] bounds].size.width/320;
         myDelegate.autoSizeScaleY = [[UIScreen mainScreen] bounds].size.height/568;
@@ -55,7 +60,6 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
-
     
 
 }
