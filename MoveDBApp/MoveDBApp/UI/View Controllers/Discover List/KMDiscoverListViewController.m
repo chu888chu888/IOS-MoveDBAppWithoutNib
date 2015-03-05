@@ -7,13 +7,14 @@
 //
 
 #import "KMDiscoverListViewController.h"
-#import "StoryBoardUtilities.h"
 #import "KMDiscoverListCell.h"
 #import "KMDiscoverSource.h"
 #import "KMMovie.h"
 #import "UIView+MJAlertView.h"
 #import "AppDelegate.h"
 #import "KMMovieDetailsViewController.h"
+#import "UIImage+Screenshot.h"
+#import "DHSmartScreenshot.h"
 NSString * const KMDiscoverListMenuCellReuseIdentifier = @"Drawer Cell";
 @interface KMDiscoverListViewController ()
 
@@ -82,6 +83,9 @@ NSString * const KMDiscoverListMenuCellReuseIdentifier = @"Drawer Cell";
     //设置刷新按钮
     UIBarButtonItem *refreshBarButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(refreshFeedForRightItem)];
     self.navigationItem.rightBarButtonItem = refreshBarButton;
+    //设置保存按钮
+    UIBarButtonItem *saveBarButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(saveRightItem)];
+    self.navigationItem.leftBarButtonItem = saveBarButton;
 
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -144,6 +148,25 @@ NSString * const KMDiscoverListMenuCellReuseIdentifier = @"Drawer Cell";
     [self requestMovies];
 }
 
+- (void)saveRightItem
+{
+    /*
+    //currentView 当前的view  创建一个基于位图的图形上下文并指定大小为
+    //UIGraphicsBeginImageContext(self.view.bounds.size);
+    UIGraphicsBeginImageContext(self.tableView.bounds.size);
+    //renderInContext呈现接受者及其子范围到指定的上下文
+    [self.view.layer renderInContext:UIGraphicsGetCurrentContext()];
+    //返回一个基于当前图形上下文的图片
+    UIImage *viewImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();//移除栈顶的基于当前位图的图形上下文
+    UIImageWriteToSavedPhotosAlbum(viewImage, nil, nil, nil);//然后将该图片保存到图片库
+     */
+    
+    //UIImage *image = [UIImage screenshot];
+    UIImage *image=[self.tableView screenshot];
+    UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);//然后将该图片保存到图片库
+   
+}
 #pragma mark -
 #pragma mark Fetched Data Processing
 

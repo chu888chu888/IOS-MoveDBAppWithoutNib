@@ -18,6 +18,8 @@
 #import "KMMovieDetailsSource.h"
 #import "KMSimilarMoviesSource.h"
 #import "UIImageView+WebCache.h"
+#import "UIView+MJAlertView.h"
+
 @interface KMMovieDetailsViewController ()
 @property (nonatomic, strong) NSMutableArray* similarMoviesDataSource;
 @property (assign) CGPoint scrollViewDragPoint;
@@ -74,10 +76,12 @@
     KMSimilarMoviesCompletionBlock completionBlock = ^(NSArray* data, NSString* errorString)
     {
         if (data != nil)
+        {
             [self processSimilarMoviesData:data];
+        }
         else
         {
-            //[self.networkLoadingViewController showErrorView];
+            [UIView addMJNotifierWithText:@"网络故障请重试" dismissAutomatically:YES];
         }
         
     };
@@ -90,10 +94,12 @@
     KMMovieDetailsCompletionBlock completionBlock = ^(KMMovie* movieDetails, NSString* errorString)
     {
         if (movieDetails != nil)
+        {
             [self processMovieDetailsData:movieDetails];
+        }
         else
         {
-            //[self.networkLoadingViewController showErrorView];
+            [UIView addMJNotifierWithText:@"网络故障请重试" dismissAutomatically:YES];
         }
         
     };
@@ -107,16 +113,16 @@
 {
     if ([data count] == 0)
     {
-        //[self.networkLoadingViewController showNoContentView];
+        [UIView addMJNotifierWithText:@"无类似的影片" dismissAutomatically:YES];
     }
     else
     {
         if (!self.similarMoviesDataSource)
+        {
             self.similarMoviesDataSource = [[NSMutableArray alloc] init];
-        
+        }
         self.similarMoviesDataSource = [NSMutableArray arrayWithArray:data];
         [self.detailsPageView reloadData];
-        //[self hideLoadingView];
     }
 }
 
@@ -126,30 +132,6 @@
     [self requestSimilarMovies];
 }
 
-
-
-/*
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    return 1;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return 10;
-}
-
-- (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString *CellWithIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellWithIdentifier];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewStylePlain reuseIdentifier:CellWithIdentifier];
-    }
-    cell.textLabel.text= @"ddd";
-    return cell;
-}
-*/
 #pragma mark -
 #pragma mark UITableView Data Source
 
@@ -288,7 +270,8 @@
     cell.contentView.backgroundColor = [UIColor clearColor];
     if ([cell isKindOfClass:[KMMovieDetailsSimilarMoviesCell class]])
     {
-
+        KMMovieDetailsSimilarMoviesCell* similarMovieCell = (KMMovieDetailsSimilarMoviesCell*)cell;
+        [similarMovieCell setCollectionViewDataSourceDelegate:self index:indexPath.row];
     }
     if ([cell isKindOfClass:[KMMovieDetailsCommentsCell class]])
         cell.separatorInset = UIEdgeInsetsMake(0, 0, 0, cell.bounds.size.width);
@@ -335,6 +318,15 @@
     return cell;
 }
 #pragma mark -
+#pragma mark UICollectionView Delegate
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath;
+{
+    KMMovieDetailsViewController* viewController = [KMMovieDetailsViewController new];
+    [self.navigationController pushViewController:viewController animated:YES];
+    viewController.movieDetails = [self.similarMoviesDataSource objectAtIndex:indexPath.row];
+}
+#pragma mark -
 #pragma mark KMDetailsPageDelegate
 
 -(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
@@ -374,7 +366,6 @@
     [headerView setAlpha:0.0];
     [headerView setHidden:YES];
 }
-
 /*
 #pragma mark - Navigation
 

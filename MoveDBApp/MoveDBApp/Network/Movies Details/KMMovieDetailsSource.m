@@ -41,7 +41,7 @@
         
         [manager GET:[self prepareUrl:movieId] parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject)
          {
-             NSLog(@"JSON: %@", responseObject);
+             //NSLog(@"JSON: %@", responseObject);
              NSDictionary* infosDictionary = [self dictionaryFromResponseData:operation.responseData jsonPatternFile:@"KMMovieDetailsSourceJsonPattern.json"];
              dispatch_async(dispatch_get_main_queue(), ^{
                  [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;

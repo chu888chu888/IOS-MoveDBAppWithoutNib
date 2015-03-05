@@ -35,6 +35,13 @@
 		B9529BF61AA071320029F00D /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = B9529BF01AA071320029F00D /* LICENSE */; };
 		B9529BF71AA071320029F00D /* readme.markdown in Sources */ = {isa = PBXBuildFile; fileRef = B9529BF11AA071320029F00D /* readme.markdown */; };
 		B9548E141AA1A9C400B6173D /* NSString+STRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = B9548E131AA1A9C400B6173D /* NSString+STRegex.m */; };
+		B9A51E8B1AA70F46006E4820 /* UIImage+Blur.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A51E851AA70F46006E4820 /* UIImage+Blur.m */; };
+		B9A51E8C1AA70F46006E4820 /* UIImage+ImageWithColor.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A51E871AA70F46006E4820 /* UIImage+ImageWithColor.m */; };
+		B9A51E8D1AA70F46006E4820 /* UIImage+Screenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A51E891AA70F46006E4820 /* UIImage+Screenshot.m */; };
+		B9A51E981AA710FA006E4820 /* UIImage+DHImageAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A51E911AA710FA006E4820 /* UIImage+DHImageAdditions.m */; };
+		B9A51E991AA710FA006E4820 /* UIScrollView+DHSmartScreenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A51E931AA710FA006E4820 /* UIScrollView+DHSmartScreenshot.m */; };
+		B9A51E9A1AA710FA006E4820 /* UITableView+DHSmartScreenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A51E951AA710FA006E4820 /* UITableView+DHSmartScreenshot.m */; };
+		B9A51E9B1AA710FA006E4820 /* UIView+DHSmartScreenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A51E971AA710FA006E4820 /* UIView+DHSmartScreenshot.m */; };
 		B9BBD93E1A9F082E00A551D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BBD93D1A9F082E00A551D9 /* main.m */; };
 		B9BBD9411A9F082E00A551D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BBD9401A9F082E00A551D9 /* AppDelegate.m */; };
 		B9BBD9441A9F082E00A551D9 /* MoveDBApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B9BBD9421A9F082E00A551D9 /* MoveDBApp.xcdatamodeld */; };
@@ -189,6 +196,22 @@
 		B9529BF11AA071320029F00D /* readme.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.markdown; sourceTree = "<group>"; };
 		B9548E121AA1A9C400B6173D /* NSString+STRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+STRegex.h"; sourceTree = "<group>"; };
 		B9548E131AA1A9C400B6173D /* NSString+STRegex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+STRegex.m"; sourceTree = "<group>"; };
+		B9A51E841AA70F46006E4820 /* UIImage+Blur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Blur.h"; sourceTree = "<group>"; };
+		B9A51E851AA70F46006E4820 /* UIImage+Blur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Blur.m"; sourceTree = "<group>"; };
+		B9A51E861AA70F46006E4820 /* UIImage+ImageWithColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageWithColor.h"; sourceTree = "<group>"; };
+		B9A51E871AA70F46006E4820 /* UIImage+ImageWithColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageWithColor.m"; sourceTree = "<group>"; };
+		B9A51E881AA70F46006E4820 /* UIImage+Screenshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Screenshot.h"; sourceTree = "<group>"; };
+		B9A51E891AA70F46006E4820 /* UIImage+Screenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Screenshot.m"; sourceTree = "<group>"; };
+		B9A51E8A1AA70F46006E4820 /* UIImage-Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage-Helpers.h"; sourceTree = "<group>"; };
+		B9A51E8F1AA710FA006E4820 /* DHSmartScreenshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHSmartScreenshot.h; sourceTree = "<group>"; };
+		B9A51E901AA710FA006E4820 /* UIImage+DHImageAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+DHImageAdditions.h"; sourceTree = "<group>"; };
+		B9A51E911AA710FA006E4820 /* UIImage+DHImageAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+DHImageAdditions.m"; sourceTree = "<group>"; };
+		B9A51E921AA710FA006E4820 /* UIScrollView+DHSmartScreenshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+DHSmartScreenshot.h"; sourceTree = "<group>"; };
+		B9A51E931AA710FA006E4820 /* UIScrollView+DHSmartScreenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+DHSmartScreenshot.m"; sourceTree = "<group>"; };
+		B9A51E941AA710FA006E4820 /* UITableView+DHSmartScreenshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+DHSmartScreenshot.h"; sourceTree = "<group>"; };
+		B9A51E951AA710FA006E4820 /* UITableView+DHSmartScreenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+DHSmartScreenshot.m"; sourceTree = "<group>"; };
+		B9A51E961AA710FA006E4820 /* UIView+DHSmartScreenshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DHSmartScreenshot.h"; sourceTree = "<group>"; };
+		B9A51E971AA710FA006E4820 /* UIView+DHSmartScreenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DHSmartScreenshot.m"; sourceTree = "<group>"; };
 		B9BBD9381A9F082E00A551D9 /* MoveDBApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoveDBApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9BBD93C1A9F082E00A551D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B9BBD93D1A9F082E00A551D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -454,6 +477,37 @@
 			path = CSLinearLayoutView;
 			sourceTree = "<group>";
 		};
+		B9A51E831AA70F46006E4820 /* UIImage-Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B9A51E841AA70F46006E4820 /* UIImage+Blur.h */,
+				B9A51E851AA70F46006E4820 /* UIImage+Blur.m */,
+				B9A51E861AA70F46006E4820 /* UIImage+ImageWithColor.h */,
+				B9A51E871AA70F46006E4820 /* UIImage+ImageWithColor.m */,
+				B9A51E881AA70F46006E4820 /* UIImage+Screenshot.h */,
+				B9A51E891AA70F46006E4820 /* UIImage+Screenshot.m */,
+				B9A51E8A1AA70F46006E4820 /* UIImage-Helpers.h */,
+			);
+			path = "UIImage-Helpers";
+			sourceTree = "<group>";
+		};
+		B9A51E8E1AA710FA006E4820 /* DHSmartScreenshot */ = {
+			isa = PBXGroup;
+			children = (
+				B9A51E8F1AA710FA006E4820 /* DHSmartScreenshot.h */,
+				B9A51E901AA710FA006E4820 /* UIImage+DHImageAdditions.h */,
+				B9A51E911AA710FA006E4820 /* UIImage+DHImageAdditions.m */,
+				B9A51E921AA710FA006E4820 /* UIScrollView+DHSmartScreenshot.h */,
+				B9A51E931AA710FA006E4820 /* UIScrollView+DHSmartScreenshot.m */,
+				B9A51E941AA710FA006E4820 /* UITableView+DHSmartScreenshot.h */,
+				B9A51E951AA710FA006E4820 /* UITableView+DHSmartScreenshot.m */,
+				B9A51E961AA710FA006E4820 /* UIView+DHSmartScreenshot.h */,
+				B9A51E971AA710FA006E4820 /* UIView+DHSmartScreenshot.m */,
+			);
+			name = DHSmartScreenshot;
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		B9BBD92F1A9F082E00A551D9 = {
 			isa = PBXGroup;
 			children = (
@@ -575,6 +629,7 @@
 		B9E3D6571A9F19EF007D25A4 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				B9A51E8E1AA710FA006E4820 /* DHSmartScreenshot */,
 				B9529BE41AA071320029F00D /* AFNetworkActivityLogger */,
 				B9529BE71AA071320029F00D /* AFOAuth2Manager */,
 				B9529BEC1AA071320029F00D /* CSLinearLayoutView */,
@@ -625,6 +680,7 @@
 		B9E3D68A1A9F1F7E007D25A4 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				B9A51E831AA70F46006E4820 /* UIImage-Helpers */,
 				B90B9EEA1AA45F5A005967C0 /* SAMCategories */,
 				B9548E121AA1A9C400B6173D /* NSString+STRegex.h */,
 				B9548E131AA1A9C400B6173D /* NSString+STRegex.m */,
@@ -1021,6 +1077,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9A51E981AA710FA006E4820 /* UIImage+DHImageAdditions.m in Sources */,
 				B9F3947B1AA5A3E4002AD0E9 /* KMMovieDetailsDescriptionCell.m in Sources */,
 				B9E3D73F1A9F23BB007D25A4 /* AFURLRequestSerialization.m in Sources */,
 				B9529BF51AA071320029F00D /* CSLinearLayoutView.m in Sources */,
@@ -1038,11 +1095,13 @@
 				B90B9F151AA45F5A005967C0 /* NSString+SAMAdditions.m in Sources */,
 				B90B9F111AA45F5A005967C0 /* NSDate+SAMAdditions.m in Sources */,
 				B9F3947D1AA5A3E4002AD0E9 /* KMMovieDetailsPopularityCell.m in Sources */,
+				B9A51E9B1AA710FA006E4820 /* UIView+DHSmartScreenshot.m in Sources */,
 				B9E3D73E1A9F23BB007D25A4 /* AFURLConnectionOperation.m in Sources */,
 				B9E3D7451A9F23BB007D25A4 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				B9E3D6AE1A9F1F7E007D25A4 /* KMGillSansLabel.m in Sources */,
 				B9529BF31AA071320029F00D /* AFHTTPRequestSerializer+OAuth2.m in Sources */,
 				B9E3D7561A9F23BB007D25A4 /* UIButton+WebCache.m in Sources */,
+				B9A51E8B1AA70F46006E4820 /* UIImage+Blur.m in Sources */,
 				B9F394811AA5A3E4002AD0E9 /* KMMovieDetailsViewAllCommentsCell.m in Sources */,
 				B9F394751AA5A3E4002AD0E9 /* KMComposeCommentCell.m in Sources */,
 				B9E3D7711A9F24F0007D25A4 /* KMMovieDetailsSource.m in Sources */,
@@ -1055,6 +1114,7 @@
 				B9E3D7471A9F23BB007D25A4 /* UIButton+AFNetworking.m in Sources */,
 				B9529BF71AA071320029F00D /* readme.markdown in Sources */,
 				B9E3D6AA1A9F1F7E007D25A4 /* KM_NSURL+Parameters.m in Sources */,
+				B9A51E991AA710FA006E4820 /* UIScrollView+DHSmartScreenshot.m in Sources */,
 				B9E3D7781A9F253A007D25A4 /* KMMovie.m in Sources */,
 				B9BBD9441A9F082E00A551D9 /* MoveDBApp.xcdatamodeld in Sources */,
 				B9E3D6561A9F196F007D25A4 /* KMDiscoverListCell.m in Sources */,
@@ -1070,11 +1130,13 @@
 				B9548E141AA1A9C400B6173D /* NSString+STRegex.m in Sources */,
 				B9E3D7501A9F23BB007D25A4 /* SDWebImageCompat.m in Sources */,
 				B90B9F1F1AA45F5A005967C0 /* UIView+SAMAdditions.m in Sources */,
+				B9A51E9A1AA710FA006E4820 /* UITableView+DHSmartScreenshot.m in Sources */,
 				B9E3D74F1A9F23BB007D25A4 /* SDImageCache.m in Sources */,
 				B9E3D7411A9F23BB007D25A4 /* AFURLSessionManager.m in Sources */,
 				B9E3D7551A9F23BB007D25A4 /* SDWebImagePrefetcher.m in Sources */,
 				B9E3D6AB1A9F1F7E007D25A4 /* NSBundle+Loader.m in Sources */,
 				B9E3D6B21A9F1F7E007D25A4 /* KMNetworkLoadingViewController.m in Sources */,
+				B9A51E8C1AA70F46006E4820 /* UIImage+ImageWithColor.m in Sources */,
 				B9E3D76F1A9F24F0007D25A4 /* KMBaseSource.m in Sources */,
 				B9E3D7591A9F23BB007D25A4 /* UIImageView+HighlightedWebCache.m in Sources */,
 				B90B9F201AA45F5A005967C0 /* UIViewController+SAMAdditions.m in Sources */,
@@ -1104,6 +1166,7 @@
 				B90B9F1A1AA45F5A005967C0 /* UIColor+SAMAdditions.m in Sources */,
 				B9E3D7461A9F23BB007D25A4 /* UIAlertView+AFNetworking.m in Sources */,
 				B90B9F101AA45F5A005967C0 /* NSData+SAMAdditions.m in Sources */,
+				B9A51E8D1AA70F46006E4820 /* UIImage+Screenshot.m in Sources */,
 				B9E3D6531A9F1943007D25A4 /* KMDiscoverListViewController.m in Sources */,
 				B9E3D7531A9F23BB007D25A4 /* SDWebImageDownloaderOperation.m in Sources */,
 				B9E3D7431A9F23BB007D25A4 /* README.md in Sources */,

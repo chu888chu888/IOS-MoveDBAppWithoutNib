@@ -12,7 +12,7 @@
 #import "KMGillSansLabel.h"
 
 @interface KMMovieDetailsViewController : UIViewController<UITableViewDataSource, UITableViewDelegate,
-    UICollectionViewDataSource,KMDetailsPageDelegate>
+    UICollectionViewDataSource,UICollectionViewDelegate,KMDetailsPageDelegate>
 @property (nonatomic)  UIView *navigationBarView;
 @property (nonatomic)  UIView *networkLoadingContainerView;
 @property (nonatomic)  KMDetailsPageView* detailsPageView;
