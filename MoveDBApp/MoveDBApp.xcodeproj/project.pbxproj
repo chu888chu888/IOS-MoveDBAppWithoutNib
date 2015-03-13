@@ -26,6 +26,7 @@
 		B90B9F1F1AA45F5A005967C0 /* UIView+SAMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B90B9F0C1AA45F5A005967C0 /* UIView+SAMAdditions.m */; };
 		B90B9F201AA45F5A005967C0 /* UIViewController+SAMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B90B9F0E1AA45F5A005967C0 /* UIViewController+SAMAdditions.m */; };
 		B91FCF001AA171BC001ED37C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B91FCEFF1AA171BC001ED37C /* Images.xcassets */; };
+		B931F83E1AB2BE020015D6A3 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B931F83D1AB2BE020015D6A3 /* Icon@2x.png */; };
 		B9529BCB1AA06CDC0029F00D /* UIView+MJAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9529BCA1AA06CDC0029F00D /* UIView+MJAlertView.m */; };
 		B9529BD01AA06DE70029F00D /* NSString+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = B9529BCD1AA06DE70029F00D /* NSString+Base.m */; };
 		B9529BF21AA071320029F00D /* AFNetworkActivityLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = B9529BE61AA071320029F00D /* AFNetworkActivityLogger.m */; };
@@ -182,6 +183,7 @@
 		B90B9F0D1AA45F5A005967C0 /* UIViewController+SAMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SAMAdditions.h"; sourceTree = "<group>"; };
 		B90B9F0E1AA45F5A005967C0 /* UIViewController+SAMAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SAMAdditions.m"; sourceTree = "<group>"; };
 		B91FCEFF1AA171BC001ED37C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B931F83D1AB2BE020015D6A3 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		B9529BC91AA06CDC0029F00D /* UIView+MJAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJAlertView.h"; sourceTree = "<group>"; };
 		B9529BCA1AA06CDC0029F00D /* UIView+MJAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJAlertView.m"; sourceTree = "<group>"; };
 		B9529BCC1AA06DE70029F00D /* NSString+Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base.h"; sourceTree = "<group>"; };
@@ -932,6 +934,7 @@
 		B9E3D7791A9F26E5007D25A4 /* Ressources */ = {
 			isa = PBXGroup;
 			children = (
+				B931F83D1AB2BE020015D6A3 /* Icon@2x.png */,
 				B9EC3D9B1AB1A1800030BBCC /* linecons.ttf */,
 				B9E3D77A1A9F26E5007D25A4 /* Plists */,
 			);
@@ -1084,6 +1087,7 @@
 			files = (
 				B91FCF001AA171BC001ED37C /* Images.xcassets in Resources */,
 				B9F394781AA5A3E4002AD0E9 /* KMMovieDetailsCell.xib in Resources */,
+				B931F83E1AB2BE020015D6A3 /* Icon@2x.png in Resources */,
 				B9E3D7421A9F23BB007D25A4 /* LICENSE in Resources */,
 				B9BBD9491A9F082E00A551D9 /* LaunchScreen.xib in Resources */,
 				B9F394821AA5A3E4002AD0E9 /* KMMovieDetailsViewAllCommentsCell.xib in Resources */,
