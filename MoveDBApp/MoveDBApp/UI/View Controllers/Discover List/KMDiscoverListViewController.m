@@ -15,6 +15,8 @@
 #import "KMMovieDetailsViewController.h"
 #import "UIImage+Screenshot.h"
 #import "DHSmartScreenshot.h"
+#import "DHSmartScreenshot.h"
+
 NSString * const KMDiscoverListMenuCellReuseIdentifier = @"Drawer Cell";
 @interface KMDiscoverListViewController ()
 
@@ -75,6 +77,7 @@ NSString * const KMDiscoverListMenuCellReuseIdentifier = @"Drawer Cell";
     self.navigationController.navigationBar.barTintColor = [UIColor lightGrayColor];
     self.navigationItem.title=@"Discover";
     
+    
     //设定刷新条
     self.refreshControl=[[UIRefreshControl alloc]initWithFrame:CGRectMake(0, -44, 320, 44)];
     [self.refreshControl addTarget:self action:@selector(refreshFeed) forControlEvents:UIControlEventValueChanged];
@@ -84,8 +87,11 @@ NSString * const KMDiscoverListMenuCellReuseIdentifier = @"Drawer Cell";
     UIBarButtonItem *refreshBarButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(refreshFeedForRightItem)];
     self.navigationItem.rightBarButtonItem = refreshBarButton;
     //设置保存按钮
+    
+
     UIBarButtonItem *saveBarButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(saveRightItem)];
     self.navigationItem.leftBarButtonItem = saveBarButton;
+    
 
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -163,9 +169,32 @@ NSString * const KMDiscoverListMenuCellReuseIdentifier = @"Drawer Cell";
      */
     
     //UIImage *image = [UIImage screenshot];
-    UIImage *image=[self.tableView screenshot];
-    UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);//然后将该图片保存到图片库
-   
+    //UIImage *image=[self.tableView screenshot];
+    //UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);//然后将该图片保存到图片库
+    
+    
+    //异步执行队列任务
+    dispatch_queue_t globalQueue=dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    dispatch_async(globalQueue, ^{
+        [self saveImage];
+        
+    });
+}
+-(void)saveImage
+{
+    UIImage *image = [UIImage screenshot];
+    image = [self.tableView screenshotExcludingAllHeaders:YES
+                                      excludingAllFooters:NO
+                                         excludingAllRows:NO];
+    //然后将该图片保存到图片库
+    UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
+    
+    //更新UI界面,此处调用了GCD主线程队列的方法
+    dispatch_queue_t mainQueue= dispatch_get_main_queue();
+    dispatch_sync(mainQueue, ^{
+        [UIView addMJNotifierWithText:@"截图已经保存在相册" dismissAutomatically:YES];
+    });
+    
 }
 #pragma mark -
 #pragma mark Fetched Data Processing
@@ -217,8 +246,9 @@ NSString * const KMDiscoverListMenuCellReuseIdentifier = @"Drawer Cell";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
 {
     KMMovieDetailsViewController* viewController = [[KMMovieDetailsViewController alloc]init];
-    [self.navigationController pushViewController:viewController animated:YES];
     viewController.movieDetails = [self.dataSource objectAtIndex:indexPath.row];
+    [self.navigationController pushViewController:viewController animated:YES];
+    
 }
 
 @end

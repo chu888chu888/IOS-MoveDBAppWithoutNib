@@ -10,7 +10,7 @@
 #import "KMDiscoverListViewController.h"
 #import "AFNetworkActivityLogger.h"
 #import "KMMovieDetailsViewController.h"
-
+#import "NSString+MD5.h"
 @interface AppDelegate ()
 
 @end
@@ -20,6 +20,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
    
+    
+    
     
     /*
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];

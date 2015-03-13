@@ -54,6 +54,12 @@
 	
 }
 
+
+/**
+ *  返回md5
+ *
+ *  NSLog(@"MD5:%@",[NSString stringWithString:@"ksldjfldskjflsdkjflskd"].MD5Hash);
+ */
 - (NSString *) MD5Hash {
 	
 	CC_MD5_CTX md5;

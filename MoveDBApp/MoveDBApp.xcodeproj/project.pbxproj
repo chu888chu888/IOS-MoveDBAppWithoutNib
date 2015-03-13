@@ -56,8 +56,8 @@
 		B9E3D6861A9F19F0007D25A4 /* EGOImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E3D6741A9F19EF007D25A4 /* EGOImageLoader.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		B9E3D6871A9F19F0007D25A4 /* EGOImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E3D6761A9F19F0007D25A4 /* EGOImageView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		B9E3D6881A9F19F0007D25A4 /* KIImagePager.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E3D6791A9F19F0007D25A4 /* KIImagePager.m */; };
-		B9E3D6A71A9F1F7E007D25A4 /* KM_NSArray+SafeValues.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E3D68C1A9F1F7E007D25A4 /* KM_NSArray+SafeValues.m */; };
-		B9E3D6A81A9F1F7E007D25A4 /* KM_NSDictionary+SafeValues.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E3D68E1A9F1F7E007D25A4 /* KM_NSDictionary+SafeValues.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B9E3D6A71A9F1F7E007D25A4 /* NSArray+SafeValues.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E3D68C1A9F1F7E007D25A4 /* NSArray+SafeValues.m */; };
+		B9E3D6A81A9F1F7E007D25A4 /* NSDictionary+SafeValues.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E3D68E1A9F1F7E007D25A4 /* NSDictionary+SafeValues.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		B9E3D6A91A9F1F7E007D25A4 /* KM_NSString+UrlEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E3D6901A9F1F7E007D25A4 /* KM_NSString+UrlEncoding.m */; };
 		B9E3D6AA1A9F1F7E007D25A4 /* KM_NSURL+Parameters.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E3D6921A9F1F7E007D25A4 /* KM_NSURL+Parameters.m */; };
 		B9E3D6AB1A9F1F7E007D25A4 /* NSBundle+Loader.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E3D6941A9F1F7E007D25A4 /* NSBundle+Loader.m */; };
@@ -114,6 +114,7 @@
 		B9E3D7741A9F24F0007D25A4 /* KMSimilarMoviesSourceJsonPattern.json in Resources */ = {isa = PBXBuildFile; fileRef = B9E3D76C1A9F24F0007D25A4 /* KMSimilarMoviesSourceJsonPattern.json */; };
 		B9E3D7781A9F253A007D25A4 /* KMMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E3D7771A9F253A007D25A4 /* KMMovie.m */; };
 		B9E3D77D1A9F26E5007D25A4 /* KMSourceConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = B9E3D77C1A9F26E5007D25A4 /* KMSourceConfig.plist */; };
+		B9EC3D9C1AB1A1800030BBCC /* linecons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9EC3D9B1AB1A1800030BBCC /* linecons.ttf */; };
 		B9F394751AA5A3E4002AD0E9 /* KMComposeCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9F3945E1AA5A3E4002AD0E9 /* KMComposeCommentCell.m */; };
 		B9F394761AA5A3E4002AD0E9 /* KMComposeCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9F3945F1AA5A3E4002AD0E9 /* KMComposeCommentCell.xib */; };
 		B9F394771AA5A3E4002AD0E9 /* KMMovieDetailsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9F394611AA5A3E4002AD0E9 /* KMMovieDetailsCell.m */; };
@@ -241,10 +242,10 @@
 		B9E3D6761A9F19F0007D25A4 /* EGOImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOImageView.m; sourceTree = "<group>"; };
 		B9E3D6781A9F19F0007D25A4 /* KIImagePager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIImagePager.h; sourceTree = "<group>"; };
 		B9E3D6791A9F19F0007D25A4 /* KIImagePager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIImagePager.m; sourceTree = "<group>"; };
-		B9E3D68B1A9F1F7E007D25A4 /* KM_NSArray+SafeValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KM_NSArray+SafeValues.h"; sourceTree = "<group>"; };
-		B9E3D68C1A9F1F7E007D25A4 /* KM_NSArray+SafeValues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KM_NSArray+SafeValues.m"; sourceTree = "<group>"; };
-		B9E3D68D1A9F1F7E007D25A4 /* KM_NSDictionary+SafeValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KM_NSDictionary+SafeValues.h"; sourceTree = "<group>"; };
-		B9E3D68E1A9F1F7E007D25A4 /* KM_NSDictionary+SafeValues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KM_NSDictionary+SafeValues.m"; sourceTree = "<group>"; };
+		B9E3D68B1A9F1F7E007D25A4 /* NSArray+SafeValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+SafeValues.h"; sourceTree = "<group>"; };
+		B9E3D68C1A9F1F7E007D25A4 /* NSArray+SafeValues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SafeValues.m"; sourceTree = "<group>"; };
+		B9E3D68D1A9F1F7E007D25A4 /* NSDictionary+SafeValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+SafeValues.h"; sourceTree = "<group>"; };
+		B9E3D68E1A9F1F7E007D25A4 /* NSDictionary+SafeValues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+SafeValues.m"; sourceTree = "<group>"; };
 		B9E3D68F1A9F1F7E007D25A4 /* KM_NSString+UrlEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KM_NSString+UrlEncoding.h"; sourceTree = "<group>"; };
 		B9E3D6901A9F1F7E007D25A4 /* KM_NSString+UrlEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KM_NSString+UrlEncoding.m"; sourceTree = "<group>"; };
 		B9E3D6911A9F1F7E007D25A4 /* KM_NSURL+Parameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KM_NSURL+Parameters.h"; sourceTree = "<group>"; };
@@ -352,6 +353,7 @@
 		B9E3D7761A9F253A007D25A4 /* KMMovie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMMovie.h; sourceTree = "<group>"; };
 		B9E3D7771A9F253A007D25A4 /* KMMovie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMMovie.m; sourceTree = "<group>"; };
 		B9E3D77C1A9F26E5007D25A4 /* KMSourceConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = KMSourceConfig.plist; sourceTree = "<group>"; };
+		B9EC3D9B1AB1A1800030BBCC /* linecons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = linecons.ttf; sourceTree = "<group>"; };
 		B9F3945D1AA5A3E4002AD0E9 /* KMComposeCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMComposeCommentCell.h; sourceTree = "<group>"; };
 		B9F3945E1AA5A3E4002AD0E9 /* KMComposeCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMComposeCommentCell.m; sourceTree = "<group>"; };
 		B9F3945F1AA5A3E4002AD0E9 /* KMComposeCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KMComposeCommentCell.xib; sourceTree = "<group>"; };
@@ -439,6 +441,37 @@
 				B90B9F0E1AA45F5A005967C0 /* UIViewController+SAMAdditions.m */,
 			);
 			path = SAMCategories;
+			sourceTree = "<group>";
+		};
+		B931F83A1AB2BCEE0015D6A3 /* NSArray */ = {
+			isa = PBXGroup;
+			children = (
+				B9E3D68B1A9F1F7E007D25A4 /* NSArray+SafeValues.h */,
+				B9E3D68C1A9F1F7E007D25A4 /* NSArray+SafeValues.m */,
+			);
+			name = NSArray;
+			sourceTree = "<group>";
+		};
+		B931F83B1AB2BCFF0015D6A3 /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				B9E3D6951A9F1F7E007D25A4 /* NSString+MD5.h */,
+				B9E3D6961A9F1F7E007D25A4 /* NSString+MD5.m */,
+				B9529BCC1AA06DE70029F00D /* NSString+Base.h */,
+				B9529BCD1AA06DE70029F00D /* NSString+Base.m */,
+				B9548E121AA1A9C400B6173D /* NSString+STRegex.h */,
+				B9548E131AA1A9C400B6173D /* NSString+STRegex.m */,
+			);
+			name = NSString;
+			sourceTree = "<group>";
+		};
+		B931F83C1AB2BD170015D6A3 /* NSDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				B9E3D68D1A9F1F7E007D25A4 /* NSDictionary+SafeValues.h */,
+				B9E3D68E1A9F1F7E007D25A4 /* NSDictionary+SafeValues.m */,
+			);
+			name = NSDictionary;
 			sourceTree = "<group>";
 		};
 		B9529BE41AA071320029F00D /* AFNetworkActivityLogger */ = {
@@ -692,27 +725,20 @@
 		B9E3D68A1A9F1F7E007D25A4 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				B931F83C1AB2BD170015D6A3 /* NSDictionary */,
+				B931F83B1AB2BCFF0015D6A3 /* NSString */,
+				B931F83A1AB2BCEE0015D6A3 /* NSArray */,
 				B975ECC21AB181EC00D7759F /* Reachability */,
 				B9A51E831AA70F46006E4820 /* UIImage-Helpers */,
 				B90B9EEA1AA45F5A005967C0 /* SAMCategories */,
-				B9548E121AA1A9C400B6173D /* NSString+STRegex.h */,
-				B9548E131AA1A9C400B6173D /* NSString+STRegex.m */,
-				B9529BCC1AA06DE70029F00D /* NSString+Base.h */,
-				B9529BCD1AA06DE70029F00D /* NSString+Base.m */,
 				B9529BC91AA06CDC0029F00D /* UIView+MJAlertView.h */,
 				B9529BCA1AA06CDC0029F00D /* UIView+MJAlertView.m */,
-				B9E3D68B1A9F1F7E007D25A4 /* KM_NSArray+SafeValues.h */,
-				B9E3D68C1A9F1F7E007D25A4 /* KM_NSArray+SafeValues.m */,
-				B9E3D68D1A9F1F7E007D25A4 /* KM_NSDictionary+SafeValues.h */,
-				B9E3D68E1A9F1F7E007D25A4 /* KM_NSDictionary+SafeValues.m */,
 				B9E3D68F1A9F1F7E007D25A4 /* KM_NSString+UrlEncoding.h */,
 				B9E3D6901A9F1F7E007D25A4 /* KM_NSString+UrlEncoding.m */,
 				B9E3D6911A9F1F7E007D25A4 /* KM_NSURL+Parameters.h */,
 				B9E3D6921A9F1F7E007D25A4 /* KM_NSURL+Parameters.m */,
 				B9E3D6931A9F1F7E007D25A4 /* NSBundle+Loader.h */,
 				B9E3D6941A9F1F7E007D25A4 /* NSBundle+Loader.m */,
-				B9E3D6951A9F1F7E007D25A4 /* NSString+MD5.h */,
-				B9E3D6961A9F1F7E007D25A4 /* NSString+MD5.m */,
 				B9E3D6971A9F1F7E007D25A4 /* UIFont+GillSansFonts.h */,
 				B9E3D6981A9F1F7E007D25A4 /* UIFont+GillSansFonts.m */,
 			);
@@ -906,6 +932,7 @@
 		B9E3D7791A9F26E5007D25A4 /* Ressources */ = {
 			isa = PBXGroup;
 			children = (
+				B9EC3D9B1AB1A1800030BBCC /* linecons.ttf */,
 				B9E3D77A1A9F26E5007D25A4 /* Plists */,
 			);
 			path = Ressources;
@@ -1062,6 +1089,7 @@
 				B9F394821AA5A3E4002AD0E9 /* KMMovieDetailsViewAllCommentsCell.xib in Resources */,
 				B9E3D7741A9F24F0007D25A4 /* KMSimilarMoviesSourceJsonPattern.json in Resources */,
 				B9F394761AA5A3E4002AD0E9 /* KMComposeCommentCell.xib in Resources */,
+				B9EC3D9C1AB1A1800030BBCC /* linecons.ttf in Resources */,
 				B9F394841AA5A3E4002AD0E9 /* KMSimilarMoviesCollectionViewCell.xib in Resources */,
 				B9F394801AA5A3E4002AD0E9 /* KMMovieDetailsSimilarMoviesCell.xib in Resources */,
 				B9E3D74C1A9F23BB007D25A4 /* LICENSE in Resources */,
@@ -1099,7 +1127,7 @@
 				B9E3D6871A9F19F0007D25A4 /* EGOImageView.m in Sources */,
 				B90B9F161AA45F5A005967C0 /* NSURL+SAMAdditions.m in Sources */,
 				B9E3D6B11A9F1F7E007D25A4 /* KMIndexedCollectionView.m in Sources */,
-				B9E3D6A71A9F1F7E007D25A4 /* KM_NSArray+SafeValues.m in Sources */,
+				B9E3D6A71A9F1F7E007D25A4 /* NSArray+SafeValues.m in Sources */,
 				B9E3D6861A9F19F0007D25A4 /* EGOImageLoader.m in Sources */,
 				B90B9F131AA45F5A005967C0 /* NSNumber+SAMAdditions.m in Sources */,
 				B9E3D7701A9F24F0007D25A4 /* KMSourceConfig.m in Sources */,
@@ -1188,7 +1216,7 @@
 				B9E3D6851A9F19F0007D25A4 /* EGOImageLoadConnection.m in Sources */,
 				B9E3D7391A9F23BB007D25A4 /* AFHTTPRequestOperation.m in Sources */,
 				B9529BF21AA071320029F00D /* AFNetworkActivityLogger.m in Sources */,
-				B9E3D6A81A9F1F7E007D25A4 /* KM_NSDictionary+SafeValues.m in Sources */,
+				B9E3D6A81A9F1F7E007D25A4 /* NSDictionary+SafeValues.m in Sources */,
 				B9E3D74B1A9F23BB007D25A4 /* UIWebView+AFNetworking.m in Sources */,
 				B90B9F171AA45F5A005967C0 /* NSUserDefaults+SAMAdditions.m in Sources */,
 				B9E3D7401A9F23BB007D25A4 /* AFURLResponseSerialization.m in Sources */,
