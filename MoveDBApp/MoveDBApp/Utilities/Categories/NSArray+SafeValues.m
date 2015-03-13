@@ -6,11 +6,11 @@
 //  Copyright (c) 2014 iKode Ltd. All rights reserved.
 //
 
-#import "KM_NSArray+SafeValues.h"
+#import "NSArray+SafeValues.h"
 
-@implementation NSArray (KM_NSArray_SafeValues)
+@implementation NSArray (NSArray_SafeValues)
 
-- (NSString*)km_safeStringAtIndex:(NSUInteger)index {
+- (NSString*)safeStringAtIndex:(NSUInteger)index {
     NSString* string = nil;
     
     if (index < self.count){
@@ -26,7 +26,7 @@
     return string;
 }
 
-- (NSNumber*)km_safeNumberAtIndex:(NSUInteger)index {
+- (NSNumber*)safeNumberAtIndex:(NSUInteger)index {
     NSNumber* number = nil;
     
     if (index < self.count){
@@ -43,7 +43,7 @@
 }
 
 
-- (NSDictionary*)km_safeDictionaryAtIndex:(NSUInteger)index {
+- (NSDictionary*)safeDictionaryAtIndex:(NSUInteger)index {
     NSDictionary* dictionary = nil;
     
     if (index < self.count){

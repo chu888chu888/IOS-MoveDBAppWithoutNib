@@ -146,42 +146,42 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B90B9EEB1AA45F5A005967C0 /* NSArray+SAMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+SAMAdditions.h"; sourceTree = "<group>"; };
-		B90B9EEC1AA45F5A005967C0 /* NSArray+SAMAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SAMAdditions.m"; sourceTree = "<group>"; };
+		B90B9EEB1AA45F5A005967C0 /* NSArray+SAMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+SAMAdditions.h"; path = "SAMCategories/NSArray+SAMAdditions.h"; sourceTree = "<group>"; };
+		B90B9EEC1AA45F5A005967C0 /* NSArray+SAMAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+SAMAdditions.m"; path = "SAMCategories/NSArray+SAMAdditions.m"; sourceTree = "<group>"; };
 		B90B9EED1AA45F5A005967C0 /* NSData+SAMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+SAMAdditions.h"; sourceTree = "<group>"; };
 		B90B9EEE1AA45F5A005967C0 /* NSData+SAMAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+SAMAdditions.m"; sourceTree = "<group>"; };
 		B90B9EEF1AA45F5A005967C0 /* NSDate+SAMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+SAMAdditions.h"; sourceTree = "<group>"; };
 		B90B9EF01AA45F5A005967C0 /* NSDate+SAMAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+SAMAdditions.m"; sourceTree = "<group>"; };
-		B90B9EF11AA45F5A005967C0 /* NSDictionary+SAMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+SAMAdditions.h"; sourceTree = "<group>"; };
-		B90B9EF21AA45F5A005967C0 /* NSDictionary+SAMAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+SAMAdditions.m"; sourceTree = "<group>"; };
+		B90B9EF11AA45F5A005967C0 /* NSDictionary+SAMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+SAMAdditions.h"; path = "SAMCategories/NSDictionary+SAMAdditions.h"; sourceTree = "<group>"; };
+		B90B9EF21AA45F5A005967C0 /* NSDictionary+SAMAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+SAMAdditions.m"; path = "SAMCategories/NSDictionary+SAMAdditions.m"; sourceTree = "<group>"; };
 		B90B9EF31AA45F5A005967C0 /* NSNumber+SAMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+SAMAdditions.h"; sourceTree = "<group>"; };
 		B90B9EF41AA45F5A005967C0 /* NSNumber+SAMAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+SAMAdditions.m"; sourceTree = "<group>"; };
 		B90B9EF51AA45F5A005967C0 /* NSObject+SAMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SAMAdditions.h"; sourceTree = "<group>"; };
 		B90B9EF61AA45F5A005967C0 /* NSObject+SAMAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SAMAdditions.m"; sourceTree = "<group>"; };
-		B90B9EF71AA45F5A005967C0 /* NSString+SAMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SAMAdditions.h"; sourceTree = "<group>"; };
-		B90B9EF81AA45F5A005967C0 /* NSString+SAMAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SAMAdditions.m"; sourceTree = "<group>"; };
-		B90B9EF91AA45F5A005967C0 /* NSURL+SAMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+SAMAdditions.h"; sourceTree = "<group>"; };
-		B90B9EFA1AA45F5A005967C0 /* NSURL+SAMAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+SAMAdditions.m"; sourceTree = "<group>"; };
+		B90B9EF71AA45F5A005967C0 /* NSString+SAMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+SAMAdditions.h"; path = "SAMCategories/NSString+SAMAdditions.h"; sourceTree = "<group>"; };
+		B90B9EF81AA45F5A005967C0 /* NSString+SAMAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+SAMAdditions.m"; path = "SAMCategories/NSString+SAMAdditions.m"; sourceTree = "<group>"; };
+		B90B9EF91AA45F5A005967C0 /* NSURL+SAMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSURL+SAMAdditions.h"; path = "SAMCategories/NSURL+SAMAdditions.h"; sourceTree = "<group>"; };
+		B90B9EFA1AA45F5A005967C0 /* NSURL+SAMAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSURL+SAMAdditions.m"; path = "SAMCategories/NSURL+SAMAdditions.m"; sourceTree = "<group>"; };
 		B90B9EFB1AA45F5A005967C0 /* NSUserDefaults+SAMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+SAMAdditions.h"; sourceTree = "<group>"; };
 		B90B9EFC1AA45F5A005967C0 /* NSUserDefaults+SAMAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+SAMAdditions.m"; sourceTree = "<group>"; };
 		B90B9EFD1AA45F5A005967C0 /* SAMCategories.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SAMCategories.bundle; sourceTree = "<group>"; };
 		B90B9EFE1AA45F5A005967C0 /* SAMCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMCategories.h; sourceTree = "<group>"; };
-		B90B9EFF1AA45F5A005967C0 /* UIApplication+SAMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+SAMAdditions.h"; sourceTree = "<group>"; };
-		B90B9F001AA45F5A005967C0 /* UIApplication+SAMAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+SAMAdditions.m"; sourceTree = "<group>"; };
-		B90B9F011AA45F5A005967C0 /* UIColor+SAMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+SAMAdditions.h"; sourceTree = "<group>"; };
-		B90B9F021AA45F5A005967C0 /* UIColor+SAMAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SAMAdditions.m"; sourceTree = "<group>"; };
-		B90B9F031AA45F5A005967C0 /* UIControl+SAMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+SAMAdditions.h"; sourceTree = "<group>"; };
-		B90B9F041AA45F5A005967C0 /* UIControl+SAMAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+SAMAdditions.m"; sourceTree = "<group>"; };
-		B90B9F051AA45F5A005967C0 /* UIDevice+SAMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+SAMAdditions.h"; sourceTree = "<group>"; };
-		B90B9F061AA45F5A005967C0 /* UIDevice+SAMAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+SAMAdditions.m"; sourceTree = "<group>"; };
-		B90B9F071AA45F5A005967C0 /* UIScreen+SAMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+SAMAdditions.h"; sourceTree = "<group>"; };
-		B90B9F081AA45F5A005967C0 /* UIScreen+SAMAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+SAMAdditions.m"; sourceTree = "<group>"; };
-		B90B9F091AA45F5A005967C0 /* UIScrollView+SAMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+SAMAdditions.h"; sourceTree = "<group>"; };
-		B90B9F0A1AA45F5A005967C0 /* UIScrollView+SAMAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SAMAdditions.m"; sourceTree = "<group>"; };
-		B90B9F0B1AA45F5A005967C0 /* UIView+SAMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SAMAdditions.h"; sourceTree = "<group>"; };
-		B90B9F0C1AA45F5A005967C0 /* UIView+SAMAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SAMAdditions.m"; sourceTree = "<group>"; };
-		B90B9F0D1AA45F5A005967C0 /* UIViewController+SAMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SAMAdditions.h"; sourceTree = "<group>"; };
-		B90B9F0E1AA45F5A005967C0 /* UIViewController+SAMAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SAMAdditions.m"; sourceTree = "<group>"; };
+		B90B9EFF1AA45F5A005967C0 /* UIApplication+SAMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIApplication+SAMAdditions.h"; path = "SAMCategories/UIApplication+SAMAdditions.h"; sourceTree = "<group>"; };
+		B90B9F001AA45F5A005967C0 /* UIApplication+SAMAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+SAMAdditions.m"; path = "SAMCategories/UIApplication+SAMAdditions.m"; sourceTree = "<group>"; };
+		B90B9F011AA45F5A005967C0 /* UIColor+SAMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+SAMAdditions.h"; path = "SAMCategories/UIColor+SAMAdditions.h"; sourceTree = "<group>"; };
+		B90B9F021AA45F5A005967C0 /* UIColor+SAMAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+SAMAdditions.m"; path = "SAMCategories/UIColor+SAMAdditions.m"; sourceTree = "<group>"; };
+		B90B9F031AA45F5A005967C0 /* UIControl+SAMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIControl+SAMAdditions.h"; path = "SAMCategories/UIControl+SAMAdditions.h"; sourceTree = "<group>"; };
+		B90B9F041AA45F5A005967C0 /* UIControl+SAMAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIControl+SAMAdditions.m"; path = "SAMCategories/UIControl+SAMAdditions.m"; sourceTree = "<group>"; };
+		B90B9F051AA45F5A005967C0 /* UIDevice+SAMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIDevice+SAMAdditions.h"; path = "SAMCategories/UIDevice+SAMAdditions.h"; sourceTree = "<group>"; };
+		B90B9F061AA45F5A005967C0 /* UIDevice+SAMAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIDevice+SAMAdditions.m"; path = "SAMCategories/UIDevice+SAMAdditions.m"; sourceTree = "<group>"; };
+		B90B9F071AA45F5A005967C0 /* UIScreen+SAMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIScreen+SAMAdditions.h"; path = "SAMCategories/UIScreen+SAMAdditions.h"; sourceTree = "<group>"; };
+		B90B9F081AA45F5A005967C0 /* UIScreen+SAMAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIScreen+SAMAdditions.m"; path = "SAMCategories/UIScreen+SAMAdditions.m"; sourceTree = "<group>"; };
+		B90B9F091AA45F5A005967C0 /* UIScrollView+SAMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+SAMAdditions.h"; path = "SAMCategories/UIScrollView+SAMAdditions.h"; sourceTree = "<group>"; };
+		B90B9F0A1AA45F5A005967C0 /* UIScrollView+SAMAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+SAMAdditions.m"; path = "SAMCategories/UIScrollView+SAMAdditions.m"; sourceTree = "<group>"; };
+		B90B9F0B1AA45F5A005967C0 /* UIView+SAMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+SAMAdditions.h"; path = "SAMCategories/UIView+SAMAdditions.h"; sourceTree = "<group>"; };
+		B90B9F0C1AA45F5A005967C0 /* UIView+SAMAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+SAMAdditions.m"; path = "SAMCategories/UIView+SAMAdditions.m"; sourceTree = "<group>"; };
+		B90B9F0D1AA45F5A005967C0 /* UIViewController+SAMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+SAMAdditions.h"; path = "SAMCategories/UIViewController+SAMAdditions.h"; sourceTree = "<group>"; };
+		B90B9F0E1AA45F5A005967C0 /* UIViewController+SAMAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+SAMAdditions.m"; path = "SAMCategories/UIViewController+SAMAdditions.m"; sourceTree = "<group>"; };
 		B91FCEFF1AA171BC001ED37C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B931F83D1AB2BE020015D6A3 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		B9529BC91AA06CDC0029F00D /* UIView+MJAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJAlertView.h"; sourceTree = "<group>"; };
@@ -405,26 +405,36 @@
 		B90B9EEA1AA45F5A005967C0 /* SAMCategories */ = {
 			isa = PBXGroup;
 			children = (
-				B90B9EEB1AA45F5A005967C0 /* NSArray+SAMAdditions.h */,
-				B90B9EEC1AA45F5A005967C0 /* NSArray+SAMAdditions.m */,
 				B90B9EED1AA45F5A005967C0 /* NSData+SAMAdditions.h */,
 				B90B9EEE1AA45F5A005967C0 /* NSData+SAMAdditions.m */,
 				B90B9EEF1AA45F5A005967C0 /* NSDate+SAMAdditions.h */,
 				B90B9EF01AA45F5A005967C0 /* NSDate+SAMAdditions.m */,
-				B90B9EF11AA45F5A005967C0 /* NSDictionary+SAMAdditions.h */,
-				B90B9EF21AA45F5A005967C0 /* NSDictionary+SAMAdditions.m */,
 				B90B9EF31AA45F5A005967C0 /* NSNumber+SAMAdditions.h */,
 				B90B9EF41AA45F5A005967C0 /* NSNumber+SAMAdditions.m */,
 				B90B9EF51AA45F5A005967C0 /* NSObject+SAMAdditions.h */,
 				B90B9EF61AA45F5A005967C0 /* NSObject+SAMAdditions.m */,
-				B90B9EF71AA45F5A005967C0 /* NSString+SAMAdditions.h */,
-				B90B9EF81AA45F5A005967C0 /* NSString+SAMAdditions.m */,
-				B90B9EF91AA45F5A005967C0 /* NSURL+SAMAdditions.h */,
-				B90B9EFA1AA45F5A005967C0 /* NSURL+SAMAdditions.m */,
 				B90B9EFB1AA45F5A005967C0 /* NSUserDefaults+SAMAdditions.h */,
 				B90B9EFC1AA45F5A005967C0 /* NSUserDefaults+SAMAdditions.m */,
 				B90B9EFD1AA45F5A005967C0 /* SAMCategories.bundle */,
 				B90B9EFE1AA45F5A005967C0 /* SAMCategories.h */,
+			);
+			path = SAMCategories;
+			sourceTree = "<group>";
+		};
+		B918CFA51AB2CA5400C866DC /* NSURL */ = {
+			isa = PBXGroup;
+			children = (
+				B9E3D6911A9F1F7E007D25A4 /* KM_NSURL+Parameters.h */,
+				B9E3D6921A9F1F7E007D25A4 /* KM_NSURL+Parameters.m */,
+				B90B9EF91AA45F5A005967C0 /* NSURL+SAMAdditions.h */,
+				B90B9EFA1AA45F5A005967C0 /* NSURL+SAMAdditions.m */,
+			);
+			name = NSURL;
+			sourceTree = "<group>";
+		};
+		B918CFA61AB2CA7A00C866DC /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
 				B90B9EFF1AA45F5A005967C0 /* UIApplication+SAMAdditions.h */,
 				B90B9F001AA45F5A005967C0 /* UIApplication+SAMAdditions.m */,
 				B90B9F011AA45F5A005967C0 /* UIColor+SAMAdditions.h */,
@@ -441,13 +451,19 @@
 				B90B9F0C1AA45F5A005967C0 /* UIView+SAMAdditions.m */,
 				B90B9F0D1AA45F5A005967C0 /* UIViewController+SAMAdditions.h */,
 				B90B9F0E1AA45F5A005967C0 /* UIViewController+SAMAdditions.m */,
+				B9529BC91AA06CDC0029F00D /* UIView+MJAlertView.h */,
+				B9529BCA1AA06CDC0029F00D /* UIView+MJAlertView.m */,
+				B9E3D6971A9F1F7E007D25A4 /* UIFont+GillSansFonts.h */,
+				B9E3D6981A9F1F7E007D25A4 /* UIFont+GillSansFonts.m */,
 			);
-			path = SAMCategories;
+			name = UIKit;
 			sourceTree = "<group>";
 		};
 		B931F83A1AB2BCEE0015D6A3 /* NSArray */ = {
 			isa = PBXGroup;
 			children = (
+				B90B9EEB1AA45F5A005967C0 /* NSArray+SAMAdditions.h */,
+				B90B9EEC1AA45F5A005967C0 /* NSArray+SAMAdditions.m */,
 				B9E3D68B1A9F1F7E007D25A4 /* NSArray+SafeValues.h */,
 				B9E3D68C1A9F1F7E007D25A4 /* NSArray+SafeValues.m */,
 			);
@@ -457,6 +473,8 @@
 		B931F83B1AB2BCFF0015D6A3 /* NSString */ = {
 			isa = PBXGroup;
 			children = (
+				B90B9EF71AA45F5A005967C0 /* NSString+SAMAdditions.h */,
+				B90B9EF81AA45F5A005967C0 /* NSString+SAMAdditions.m */,
 				B9E3D6951A9F1F7E007D25A4 /* NSString+MD5.h */,
 				B9E3D6961A9F1F7E007D25A4 /* NSString+MD5.m */,
 				B9529BCC1AA06DE70029F00D /* NSString+Base.h */,
@@ -470,6 +488,8 @@
 		B931F83C1AB2BD170015D6A3 /* NSDictionary */ = {
 			isa = PBXGroup;
 			children = (
+				B90B9EF11AA45F5A005967C0 /* NSDictionary+SAMAdditions.h */,
+				B90B9EF21AA45F5A005967C0 /* NSDictionary+SAMAdditions.m */,
 				B9E3D68D1A9F1F7E007D25A4 /* NSDictionary+SafeValues.h */,
 				B9E3D68E1A9F1F7E007D25A4 /* NSDictionary+SafeValues.m */,
 			);
@@ -727,22 +747,18 @@
 		B9E3D68A1A9F1F7E007D25A4 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				B90B9EEA1AA45F5A005967C0 /* SAMCategories */,
+				B918CFA61AB2CA7A00C866DC /* UIKit */,
+				B918CFA51AB2CA5400C866DC /* NSURL */,
 				B931F83C1AB2BD170015D6A3 /* NSDictionary */,
 				B931F83B1AB2BCFF0015D6A3 /* NSString */,
 				B931F83A1AB2BCEE0015D6A3 /* NSArray */,
 				B975ECC21AB181EC00D7759F /* Reachability */,
 				B9A51E831AA70F46006E4820 /* UIImage-Helpers */,
-				B90B9EEA1AA45F5A005967C0 /* SAMCategories */,
-				B9529BC91AA06CDC0029F00D /* UIView+MJAlertView.h */,
-				B9529BCA1AA06CDC0029F00D /* UIView+MJAlertView.m */,
 				B9E3D68F1A9F1F7E007D25A4 /* KM_NSString+UrlEncoding.h */,
 				B9E3D6901A9F1F7E007D25A4 /* KM_NSString+UrlEncoding.m */,
-				B9E3D6911A9F1F7E007D25A4 /* KM_NSURL+Parameters.h */,
-				B9E3D6921A9F1F7E007D25A4 /* KM_NSURL+Parameters.m */,
 				B9E3D6931A9F1F7E007D25A4 /* NSBundle+Loader.h */,
 				B9E3D6941A9F1F7E007D25A4 /* NSBundle+Loader.m */,
-				B9E3D6971A9F1F7E007D25A4 /* UIFont+GillSansFonts.h */,
-				B9E3D6981A9F1F7E007D25A4 /* UIFont+GillSansFonts.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
