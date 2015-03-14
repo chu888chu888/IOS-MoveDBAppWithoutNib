@@ -49,6 +49,7 @@
 		B9BBD9441A9F082E00A551D9 /* MoveDBApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B9BBD9421A9F082E00A551D9 /* MoveDBApp.xcdatamodeld */; };
 		B9BBD9491A9F082E00A551D9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9BBD9471A9F082E00A551D9 /* LaunchScreen.xib */; };
 		B9BBD9551A9F082E00A551D9 /* MoveDBAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BBD9541A9F082E00A551D9 /* MoveDBAppTests.m */; };
+		B9D412951AB2DA6E00792069 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D412941AB2DA6E00792069 /* MBProgressHUD.m */; };
 		B9E3D6531A9F1943007D25A4 /* KMDiscoverListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E3D6521A9F1943007D25A4 /* KMDiscoverListViewController.m */; };
 		B9E3D6561A9F196F007D25A4 /* KMDiscoverListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E3D6551A9F196F007D25A4 /* KMDiscoverListCell.m */; };
 		B9E3D6831A9F19F0007D25A4 /* EGOCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E3D66E1A9F19EF007D25A4 /* EGOCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -133,6 +134,12 @@
 		B9F394831AA5A3E4002AD0E9 /* KMSimilarMoviesCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9F394731AA5A3E4002AD0E9 /* KMSimilarMoviesCollectionViewCell.m */; };
 		B9F394841AA5A3E4002AD0E9 /* KMSimilarMoviesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9F394741AA5A3E4002AD0E9 /* KMSimilarMoviesCollectionViewCell.xib */; };
 		B9F394871AA5A442002AD0E9 /* KMMovieDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9F394861AA5A442002AD0E9 /* KMMovieDetailsViewController.m */; };
+		B9F667651AB2DBC7009D3940 /* NSMutableArray+SWUtilityButtons.m in Sources */ = {isa = PBXBuildFile; fileRef = B9F6675A1AB2DBC7009D3940 /* NSMutableArray+SWUtilityButtons.m */; };
+		B9F667661AB2DBC7009D3940 /* SWCellScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9F6675C1AB2DBC7009D3940 /* SWCellScrollView.m */; };
+		B9F667671AB2DBC7009D3940 /* SWLongPressGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = B9F6675E1AB2DBC7009D3940 /* SWLongPressGestureRecognizer.m */; };
+		B9F667681AB2DBC7009D3940 /* SWTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9F667601AB2DBC7009D3940 /* SWTableViewCell.m */; };
+		B9F667691AB2DBC7009D3940 /* SWUtilityButtonTapGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = B9F667621AB2DBC7009D3940 /* SWUtilityButtonTapGestureRecognizer.m */; };
+		B9F6676A1AB2DBC7009D3940 /* SWUtilityButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9F667641AB2DBC7009D3940 /* SWUtilityButtonView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -228,6 +235,8 @@
 		B9BBD94E1A9F082E00A551D9 /* MoveDBAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoveDBAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9BBD9531A9F082E00A551D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B9BBD9541A9F082E00A551D9 /* MoveDBAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoveDBAppTests.m; sourceTree = "<group>"; };
+		B9D412931AB2DA6E00792069 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		B9D412941AB2DA6E00792069 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		B9E3D6511A9F1943007D25A4 /* KMDiscoverListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KMDiscoverListViewController.h; path = "UI/View Controllers/Discover List/KMDiscoverListViewController.h"; sourceTree = "<group>"; };
 		B9E3D6521A9F1943007D25A4 /* KMDiscoverListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KMDiscoverListViewController.m; path = "UI/View Controllers/Discover List/KMDiscoverListViewController.m"; sourceTree = "<group>"; };
 		B9E3D6541A9F196F007D25A4 /* KMDiscoverListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KMDiscoverListCell.h; path = "UI/View Controllers/Discover List/KMDiscoverListCell.h"; sourceTree = "<group>"; };
@@ -382,6 +391,18 @@
 		B9F394741AA5A3E4002AD0E9 /* KMSimilarMoviesCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KMSimilarMoviesCollectionViewCell.xib; sourceTree = "<group>"; };
 		B9F394851AA5A442002AD0E9 /* KMMovieDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KMMovieDetailsViewController.h; path = "UI/View Controllers/Movie Details Page/KMMovieDetailsViewController.h"; sourceTree = "<group>"; };
 		B9F394861AA5A442002AD0E9 /* KMMovieDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KMMovieDetailsViewController.m; path = "UI/View Controllers/Movie Details Page/KMMovieDetailsViewController.m"; sourceTree = "<group>"; };
+		B9F667591AB2DBC7009D3940 /* NSMutableArray+SWUtilityButtons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+SWUtilityButtons.h"; sourceTree = "<group>"; };
+		B9F6675A1AB2DBC7009D3940 /* NSMutableArray+SWUtilityButtons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+SWUtilityButtons.m"; sourceTree = "<group>"; };
+		B9F6675B1AB2DBC7009D3940 /* SWCellScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWCellScrollView.h; sourceTree = "<group>"; };
+		B9F6675C1AB2DBC7009D3940 /* SWCellScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWCellScrollView.m; sourceTree = "<group>"; };
+		B9F6675D1AB2DBC7009D3940 /* SWLongPressGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWLongPressGestureRecognizer.h; sourceTree = "<group>"; };
+		B9F6675E1AB2DBC7009D3940 /* SWLongPressGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWLongPressGestureRecognizer.m; sourceTree = "<group>"; };
+		B9F6675F1AB2DBC7009D3940 /* SWTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWTableViewCell.h; sourceTree = "<group>"; };
+		B9F667601AB2DBC7009D3940 /* SWTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWTableViewCell.m; sourceTree = "<group>"; };
+		B9F667611AB2DBC7009D3940 /* SWUtilityButtonTapGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWUtilityButtonTapGestureRecognizer.h; sourceTree = "<group>"; };
+		B9F667621AB2DBC7009D3940 /* SWUtilityButtonTapGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWUtilityButtonTapGestureRecognizer.m; sourceTree = "<group>"; };
+		B9F667631AB2DBC7009D3940 /* SWUtilityButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWUtilityButtonView.h; sourceTree = "<group>"; };
+		B9F667641AB2DBC7009D3940 /* SWUtilityButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWUtilityButtonView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -637,6 +658,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B9D412961AB2DA7300792069 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				B9D412931AB2DA6E00792069 /* MBProgressHUD.h */,
+				B9D412941AB2DA6E00792069 /* MBProgressHUD.m */,
+			);
+			name = MBProgressHUD;
+			sourceTree = "<group>";
+		};
 		B9E3D6481A9F17C2007D25A4 /* App Delegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -696,6 +726,8 @@
 		B9E3D6571A9F19EF007D25A4 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				B9F667581AB2DBC7009D3940 /* SWTableViewCell */,
+				B9D412961AB2DA7300792069 /* MBProgressHUD */,
 				B9A51E8E1AA710FA006E4820 /* DHSmartScreenshot */,
 				B9529BE41AA071320029F00D /* AFNetworkActivityLogger */,
 				B9529BE71AA071320029F00D /* AFOAuth2Manager */,
@@ -1021,6 +1053,25 @@
 			name = "Movie Details Page";
 			sourceTree = "<group>";
 		};
+		B9F667581AB2DBC7009D3940 /* SWTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				B9F667591AB2DBC7009D3940 /* NSMutableArray+SWUtilityButtons.h */,
+				B9F6675A1AB2DBC7009D3940 /* NSMutableArray+SWUtilityButtons.m */,
+				B9F6675B1AB2DBC7009D3940 /* SWCellScrollView.h */,
+				B9F6675C1AB2DBC7009D3940 /* SWCellScrollView.m */,
+				B9F6675D1AB2DBC7009D3940 /* SWLongPressGestureRecognizer.h */,
+				B9F6675E1AB2DBC7009D3940 /* SWLongPressGestureRecognizer.m */,
+				B9F6675F1AB2DBC7009D3940 /* SWTableViewCell.h */,
+				B9F667601AB2DBC7009D3940 /* SWTableViewCell.m */,
+				B9F667611AB2DBC7009D3940 /* SWUtilityButtonTapGestureRecognizer.h */,
+				B9F667621AB2DBC7009D3940 /* SWUtilityButtonTapGestureRecognizer.m */,
+				B9F667631AB2DBC7009D3940 /* SWUtilityButtonView.h */,
+				B9F667641AB2DBC7009D3940 /* SWUtilityButtonView.m */,
+			);
+			path = SWTableViewCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1159,6 +1210,7 @@
 				B9A51E9B1AA710FA006E4820 /* UIView+DHSmartScreenshot.m in Sources */,
 				B9E3D73E1A9F23BB007D25A4 /* AFURLConnectionOperation.m in Sources */,
 				B9E3D7451A9F23BB007D25A4 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				B9F667671AB2DBC7009D3940 /* SWLongPressGestureRecognizer.m in Sources */,
 				B9E3D6AE1A9F1F7E007D25A4 /* KMGillSansLabel.m in Sources */,
 				B9529BF31AA071320029F00D /* AFHTTPRequestSerializer+OAuth2.m in Sources */,
 				B9E3D7561A9F23BB007D25A4 /* UIButton+WebCache.m in Sources */,
@@ -1168,11 +1220,13 @@
 				B9E3D7711A9F24F0007D25A4 /* KMMovieDetailsSource.m in Sources */,
 				B9529BF41AA071320029F00D /* AFOAuth2Manager.m in Sources */,
 				B90B9F1C1AA45F5A005967C0 /* UIDevice+SAMAdditions.m in Sources */,
+				B9F667681AB2DBC7009D3940 /* SWTableViewCell.m in Sources */,
 				B9E3D6A91A9F1F7E007D25A4 /* KM_NSString+UrlEncoding.m in Sources */,
 				B9E3D74E1A9F23BB007D25A4 /* NSData+ImageContentType.m in Sources */,
 				B9E3D7511A9F23BB007D25A4 /* SDWebImageDecoder.m in Sources */,
 				B9E3D6841A9F19F0007D25A4 /* EGOImageButton.m in Sources */,
 				B9E3D7471A9F23BB007D25A4 /* UIButton+AFNetworking.m in Sources */,
+				B9F6676A1AB2DBC7009D3940 /* SWUtilityButtonView.m in Sources */,
 				B9529BF71AA071320029F00D /* readme.markdown in Sources */,
 				B9E3D6AA1A9F1F7E007D25A4 /* KM_NSURL+Parameters.m in Sources */,
 				B9A51E991AA710FA006E4820 /* UIScrollView+DHSmartScreenshot.m in Sources */,
@@ -1203,6 +1257,7 @@
 				B90B9F201AA45F5A005967C0 /* UIViewController+SAMAdditions.m in Sources */,
 				B9BBD93E1A9F082E00A551D9 /* main.m in Sources */,
 				B9F394771AA5A3E4002AD0E9 /* KMMovieDetailsCell.m in Sources */,
+				B9F667691AB2DBC7009D3940 /* SWUtilityButtonTapGestureRecognizer.m in Sources */,
 				B9E3D7441A9F23BB007D25A4 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				B9E3D74D1A9F23BB007D25A4 /* README.md in Sources */,
 				B9E3D6881A9F19F0007D25A4 /* KIImagePager.m in Sources */,
@@ -1215,6 +1270,8 @@
 				B9E3D6AD1A9F1F7E007D25A4 /* UIFont+GillSansFonts.m in Sources */,
 				B9E3D76D1A9F24F0007D25A4 /* KMDiscoverSource.m in Sources */,
 				B9E3D6AC1A9F1F7E007D25A4 /* NSString+MD5.m in Sources */,
+				B9F667651AB2DBC7009D3940 /* NSMutableArray+SWUtilityButtons.m in Sources */,
+				B9D412951AB2DA6E00792069 /* MBProgressHUD.m in Sources */,
 				B90B9F0F1AA45F5A005967C0 /* NSArray+SAMAdditions.m in Sources */,
 				B90B9F1B1AA45F5A005967C0 /* UIControl+SAMAdditions.m in Sources */,
 				B9E3D6B01A9F1F7E007D25A4 /* KMDetailsPageView.m in Sources */,
@@ -1229,6 +1286,7 @@
 				B90B9F101AA45F5A005967C0 /* NSData+SAMAdditions.m in Sources */,
 				B9A51E8D1AA70F46006E4820 /* UIImage+Screenshot.m in Sources */,
 				B9E3D6531A9F1943007D25A4 /* KMDiscoverListViewController.m in Sources */,
+				B9F667661AB2DBC7009D3940 /* SWCellScrollView.m in Sources */,
 				B9E3D7531A9F23BB007D25A4 /* SDWebImageDownloaderOperation.m in Sources */,
 				B9E3D7431A9F23BB007D25A4 /* README.md in Sources */,
 				B9E3D7521A9F23BB007D25A4 /* SDWebImageDownloader.m in Sources */,
