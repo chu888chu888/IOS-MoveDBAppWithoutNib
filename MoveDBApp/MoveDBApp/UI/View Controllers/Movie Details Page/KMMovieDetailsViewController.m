@@ -19,7 +19,7 @@
 #import "KMSimilarMoviesSource.h"
 #import "UIImageView+WebCache.h"
 #import "UIView+MJAlertView.h"
-
+#import "KMSimilarMoviesViewController.h"
 @interface KMMovieDetailsViewController ()
 @property (nonatomic, strong) NSMutableArray* similarMoviesDataSource;
 @property (assign) CGPoint scrollViewDragPoint;
@@ -365,6 +365,15 @@
 {
     [headerView setAlpha:0.0];
     [headerView setHidden:YES];
+}
+#pragma mark -
+#pragma mark Action Methods
+
+- (void)viewAllSimilarMoviesButtonPressed:(id)sender
+{
+    KMSimilarMoviesViewController* viewController = [[KMSimilarMoviesViewController alloc] init];
+    viewController.moviesDataSource = self.similarMoviesDataSource;
+    [self.navigationController pushViewController:viewController animated:YES];
 }
 /*
 #pragma mark - Navigation
