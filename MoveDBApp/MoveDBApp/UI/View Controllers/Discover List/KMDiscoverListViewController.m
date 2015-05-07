@@ -17,6 +17,8 @@
 #import "DHSmartScreenshot.h"
 #import "DHSmartScreenshot.h"
 
+
+
 NSString * const KMDiscoverListMenuCellReuseIdentifier = @"Drawer Cell";
 @interface KMDiscoverListViewController ()
 
@@ -171,6 +173,7 @@ NSString * const KMDiscoverListMenuCellReuseIdentifier = @"Drawer Cell";
     //UIImage *image = [UIImage screenshot];
     //UIImage *image=[self.tableView screenshot];
     //UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);//然后将该图片保存到图片库
+    
     
     
     //异步执行队列任务

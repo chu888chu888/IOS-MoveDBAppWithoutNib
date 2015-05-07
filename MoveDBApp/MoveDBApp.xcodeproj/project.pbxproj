@@ -37,6 +37,7 @@
 		B9529BF71AA071320029F00D /* readme.markdown in Sources */ = {isa = PBXBuildFile; fileRef = B9529BF11AA071320029F00D /* readme.markdown */; };
 		B9548E141AA1A9C400B6173D /* NSString+STRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = B9548E131AA1A9C400B6173D /* NSString+STRegex.m */; };
 		B975ECC51AB181EC00D7759F /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = B975ECC41AB181EC00D7759F /* Reachability.m */; };
+		B98344C81ACBE66500A300F5 /* IncludeTools.m in Sources */ = {isa = PBXBuildFile; fileRef = B98344C71ACBE66500A300F5 /* IncludeTools.m */; };
 		B9A51E8B1AA70F46006E4820 /* UIImage+Blur.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A51E851AA70F46006E4820 /* UIImage+Blur.m */; };
 		B9A51E8C1AA70F46006E4820 /* UIImage+ImageWithColor.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A51E871AA70F46006E4820 /* UIImage+ImageWithColor.m */; };
 		B9A51E8D1AA70F46006E4820 /* UIImage+Screenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A51E891AA70F46006E4820 /* UIImage+Screenshot.m */; };
@@ -211,6 +212,8 @@
 		B9548E131AA1A9C400B6173D /* NSString+STRegex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+STRegex.m"; sourceTree = "<group>"; };
 		B975ECC31AB181EC00D7759F /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		B975ECC41AB181EC00D7759F /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		B98344C61ACBE66500A300F5 /* IncludeTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IncludeTools.h; sourceTree = "<group>"; };
+		B98344C71ACBE66500A300F5 /* IncludeTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IncludeTools.m; sourceTree = "<group>"; };
 		B9A51E841AA70F46006E4820 /* UIImage+Blur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Blur.h"; sourceTree = "<group>"; };
 		B9A51E851AA70F46006E4820 /* UIImage+Blur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Blur.m"; sourceTree = "<group>"; };
 		B9A51E861AA70F46006E4820 /* UIImage+ImageWithColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageWithColor.h"; sourceTree = "<group>"; };
@@ -571,6 +574,15 @@
 			path = Reachability;
 			sourceTree = "<group>";
 		};
+		B98344C11ACBE4E900A300F5 /* Include */ = {
+			isa = PBXGroup;
+			children = (
+				B98344C61ACBE66500A300F5 /* IncludeTools.h */,
+				B98344C71ACBE66500A300F5 /* IncludeTools.m */,
+			);
+			name = Include;
+			sourceTree = "<group>";
+		};
 		B9A51E831AA70F46006E4820 /* UIImage-Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -779,6 +791,7 @@
 		B9E3D6891A9F1F7E007D25A4 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				B98344C11ACBE4E900A300F5 /* Include */,
 				B9E3D68A1A9F1F7E007D25A4 /* Categories */,
 				B9E3D6991A9F1F7E007D25A4 /* Labels */,
 				B9E3D69C1A9F1F7E007D25A4 /* Tools */,
@@ -1226,6 +1239,7 @@
 				B9E3D7561A9F23BB007D25A4 /* UIButton+WebCache.m in Sources */,
 				B9A51E8B1AA70F46006E4820 /* UIImage+Blur.m in Sources */,
 				B9F394811AA5A3E4002AD0E9 /* KMMovieDetailsViewAllCommentsCell.m in Sources */,
+				B98344C81ACBE66500A300F5 /* IncludeTools.m in Sources */,
 				B9F394751AA5A3E4002AD0E9 /* KMComposeCommentCell.m in Sources */,
 				B9E3D7711A9F24F0007D25A4 /* KMMovieDetailsSource.m in Sources */,
 				B9529BF41AA071320029F00D /* AFOAuth2Manager.m in Sources */,
@@ -1427,6 +1441,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MoveDBApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1437,6 +1452,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MoveDBApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
